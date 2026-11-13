@@ -35,7 +35,8 @@
    "priority": 1,
    "searchURL": "https://www.fastpeoplesearch.com/",
    "optOutURL": "https://www.fastpeoplesearch.com/optout",
-   "steps": "Search for yourself on the opt-out page, solve the captcha and remove each record that's you."
+   "steps": "Search for yourself on the opt-out page, solve the captcha and remove each record that's you.",
+   "searchTemplate": "https://www.fastpeoplesearch.com/name/{first}-{last}_{city}-{st}"
   },
   {
    "id": "intelius",
@@ -71,7 +72,8 @@
    "searchURL": "https://www.spokeo.com/search",
    "optOutURL": "https://www.spokeo.com/optout",
    "steps": "Search your name or phone number and copy the link to your profile. Paste it on the opt-out page with your email, then click the link Spokeo emails you. Spokeo runs AnyWho, PeopleWin, FreePeopleDirectory, Selfie Network, Selfie Systems and Profile Systems, so this one removal clears those too.",
-   "needsEmail": true
+   "needsEmail": true,
+   "searchTemplate": "https://www.spokeo.com/{First}-{Last}/{State}/{City}"
   },
   {
    "id": "thatsthem",
@@ -79,7 +81,8 @@
    "priority": 1,
    "searchURL": "https://thatsthem.com/",
    "optOutURL": "https://thatsthem.com/optout",
-   "steps": "Search your name and phone number. If you're listed, fill in the opt-out form with what the site already shows."
+   "steps": "Search your name and phone number. If you're listed, fill in the opt-out form with what the site already shows.",
+   "searchTemplate": "https://thatsthem.com/name/{First}-{Last}/{City}-{ST}"
   },
   {
    "id": "truepeoplesearch",
@@ -87,7 +90,8 @@
    "priority": 1,
    "searchURL": null,
    "optOutURL": "https://www.truepeoplesearch.com/removal",
-   "steps": "Enter your name, city/state and email, solve the captchas, then choose your record and remove it."
+   "steps": "Enter your name, city/state and email, solve the captchas, then choose your record and remove it.",
+   "searchTemplate": "https://www.truepeoplesearch.com/results?name={First}%20{Last}&citystatezip={City}%2C%20{ST}"
   },
   {
    "id": "usphonebook",
@@ -105,7 +109,8 @@
    "optOutURL": "https://www.whitepages.com/suppression_requests",
    "steps": "Search your name, open your listing and copy its web address. Paste it into the removal page. Whitepages calls the phone number you give and reads you a code to enter. One removal also covers Whitepages Premium and 411.com. If you'd rather not get the phone call, use Email Request instead.",
    "needsPhoneCall": true,
-   "email": "privacyrequest@whitepages.com"
+   "email": "privacyrequest@whitepages.com",
+   "searchTemplate": "https://www.whitepages.com/name/{First}-{Last}/{City}-{ST}"
   },
   {
    "id": "addresses-com",
@@ -139,7 +144,8 @@
    "priority": 2,
    "searchURL": "https://www.cyberbackgroundchecks.com/",
    "optOutURL": "https://www.cyberbackgroundchecks.com/removal",
-   "steps": "Search yourself, then submit the removal form for your record."
+   "steps": "Search yourself, then submit the removal form for your record.",
+   "searchTemplate": "https://www.cyberbackgroundchecks.com/people/{first}-{last}/{st}/{city}"
   },
   {
    "id": "data-axle",
@@ -193,7 +199,8 @@
    "optOutURL": "https://www.idcrawl.com/remove-my-information",
    "steps": "Open your IDCrawl name page and copy its link. Paste it with your email on the removal page and solve the captcha. Click the link in the email (valid 24 hours), then tick what to take down. Removing IDCrawl doesn't remove the sites it links to.",
    "email": "support@idcrawl.com",
-   "needsEmail": true
+   "needsEmail": true,
+   "searchTemplate": "https://www.idcrawl.com/{first}-{last}"
   },
   {
    "id": "instantcheckmate",
@@ -316,7 +323,8 @@
    "searchURL": "https://radaris.com/",
    "optOutURL": "https://radaris.com/control/privacy",
    "steps": "Find your profile, copy its link and paste it into the privacy control page. Confirm by email.",
-   "needsEmail": true
+   "needsEmail": true,
+   "searchTemplate": "https://radaris.com/p/{First}/{Last}/"
   },
   {
    "id": "searchpeoplefree",
@@ -324,7 +332,8 @@
    "priority": 2,
    "searchURL": "https://www.searchpeoplefree.com/",
    "optOutURL": "https://www.searchpeoplefree.com/opt-out",
-   "steps": "Search by name and by phone number — the same person can show up more than once. Opt out each record."
+   "steps": "Search by name and by phone number — the same person can show up more than once. Opt out each record.",
+   "searchTemplate": "https://www.searchpeoplefree.com/find/{first}-{last}/{st}/{city}"
   },
   {
    "id": "selfienetwork",

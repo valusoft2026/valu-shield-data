@@ -1,0 +1,3739 @@
+{
+ "updated": "2026-11-12",
+ "brokers": [
+  {
+   "id": "beenverified",
+   "name": "BeenVerified",
+   "priority": 1,
+   "searchURL": null,
+   "optOutURL": "https://www.beenverified.com/app/optout/search",
+   "steps": "Search yourself on the opt-out page, pick your record and enter your email. Click the email link to finish. This also covers PeopleLooker and PeopleSmart. BeenVerified allows one opt-out per email address.",
+   "needsEmail": true,
+   "email": "privacy@ltvco.com"
+  },
+  {
+   "id": "callersmart",
+   "name": "CallerSmart",
+   "priority": 1,
+   "searchURL": "https://www.callersmart.com/",
+   "optOutURL": "https://www.callersmart.com/data",
+   "steps": "CallerSmart looks up by phone number only. Enter your 10-digit number and email on the opt-out page, then click the confirmation link.",
+   "email": "feedback@callersmart.com",
+   "needsEmail": true
+  },
+  {
+   "id": "checkpeople",
+   "name": "CheckPeople",
+   "priority": 1,
+   "searchURL": null,
+   "optOutURL": "https://checkpeople.com/opt-out",
+   "steps": "Fill in the opt-out form. It asks for your full name and birth date to match your record."
+  },
+  {
+   "id": "fastpeoplesearch",
+   "name": "FastPeopleSearch",
+   "priority": 1,
+   "searchURL": "https://www.fastpeoplesearch.com/",
+   "optOutURL": "https://www.fastpeoplesearch.com/optout",
+   "steps": "Search for yourself on the opt-out page, solve the captcha and remove each record that's you."
+  },
+  {
+   "id": "intelius",
+   "name": "Intelius",
+   "priority": 1,
+   "searchURL": "https://www.intelius.com/",
+   "optOutURL": "https://suppression.peopleconnect.us/login",
+   "steps": "Intelius is part of PeopleConnect, which also runs TruthFinder, Instant Checkmate and others. Sign in with your email on the suppression page, verify it, then search and suppress your record.",
+   "needsEmail": true,
+   "email": "privacy@intelius.com"
+  },
+  {
+   "id": "mylife",
+   "name": "MyLife",
+   "priority": 1,
+   "searchURL": "https://www.mylife.com/",
+   "optOutURL": "https://www.mylife.com/privacyrequest",
+   "steps": "Find your profile and copy its link. Submit it on the privacy request page. MyLife may ask you to call or email to finish.",
+   "needsPhoneCall": true
+  },
+  {
+   "id": "smartbackgroundchecks",
+   "name": "SmartBackgroundChecks",
+   "priority": 1,
+   "searchURL": "https://www.smartbackgroundchecks.com/",
+   "optOutURL": "https://www.smartbackgroundchecks.com/optout",
+   "steps": "Search yourself, then use the opt-out page to remove your record. This often clears PeopleFinders too."
+  },
+  {
+   "id": "spokeo",
+   "name": "Spokeo",
+   "priority": 1,
+   "searchURL": "https://www.spokeo.com/search",
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "Search your name or phone number and copy the link to your profile. Paste it on the opt-out page with your email, then click the link Spokeo emails you. Spokeo runs AnyWho, PeopleWin, FreePeopleDirectory, Selfie Network, Selfie Systems and Profile Systems, so this one removal clears those too.",
+   "needsEmail": true
+  },
+  {
+   "id": "thatsthem",
+   "name": "That's Them",
+   "priority": 1,
+   "searchURL": "https://thatsthem.com/",
+   "optOutURL": "https://thatsthem.com/optout",
+   "steps": "Search your name and phone number. If you're listed, fill in the opt-out form with what the site already shows."
+  },
+  {
+   "id": "truepeoplesearch",
+   "name": "TruePeopleSearch",
+   "priority": 1,
+   "searchURL": null,
+   "optOutURL": "https://www.truepeoplesearch.com/removal",
+   "steps": "Enter your name, city/state and email, solve the captchas, then choose your record and remove it."
+  },
+  {
+   "id": "usphonebook",
+   "name": "USPhoneBook",
+   "priority": 1,
+   "searchURL": null,
+   "optOutURL": "https://www.usphonebook.com/opt-out/",
+   "steps": "Search by your phone number, find your listing and confirm removal. Repeat for any older numbers you've had."
+  },
+  {
+   "id": "whitepages",
+   "name": "Whitepages",
+   "priority": 1,
+   "searchURL": "https://www.whitepages.com/",
+   "optOutURL": "https://www.whitepages.com/suppression_requests",
+   "steps": "Search your name, open your listing and copy its web address. Paste it into the removal page. Whitepages calls the phone number you give and reads you a code to enter. One removal also covers Whitepages Premium and 411.com. If you'd rather not get the phone call, use Email Request instead.",
+   "needsPhoneCall": true,
+   "email": "privacyrequest@whitepages.com"
+  },
+  {
+   "id": "addresses-com",
+   "name": "Addresses.com",
+   "priority": 2,
+   "searchURL": "https://addresses.com/",
+   "optOutURL": "https://www.addresses.com/optout",
+   "steps": "Visit addresses.com/optout Search for your record using your name and location Select your record from the search results Follow the prompts to request removal Enter your email address if requested Confirm the request via email if required Check back in a few days to ensure it's removed"
+  },
+  {
+   "id": "anywho",
+   "name": "AnyWho",
+   "priority": 2,
+   "searchURL": "https://www.anywho.com/",
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "AnyWho uses Spokeo's records and its own opt-out link goes to Spokeo. Find your listing (on AnyWho or Spokeo), copy the link, and submit it on Spokeo's opt-out page. Confirm by email.",
+   "coveredBy": "spokeo",
+   "needsEmail": true
+  },
+  {
+   "id": "cocofinder",
+   "name": "CocoFinder",
+   "priority": 2,
+   "searchURL": "https://cocofinder.com/",
+   "optOutURL": "https://cocofinder.com/optOut",
+   "steps": "Visit cocofinder.com/optOut Search for your listing Select your record Submit the opt-out request Confirm via email if prompted Check back later to verify removal"
+  },
+  {
+   "id": "cyberbackgroundchecks",
+   "name": "Cyber Background Checks",
+   "priority": 2,
+   "searchURL": "https://www.cyberbackgroundchecks.com/",
+   "optOutURL": "https://www.cyberbackgroundchecks.com/removal",
+   "steps": "Search yourself, then submit the removal form for your record."
+  },
+  {
+   "id": "data-axle",
+   "name": "Data Axle",
+   "priority": 2,
+   "searchURL": "https://data-axle.com/",
+   "optOutURL": "https://www.data-axle.com/do-not-sell-my-data/",
+   "steps": "Online form. HIGH PRIORITY. Major data aggregator (formerly InfoUSA/Infogroup). Feeds data to many directories. Also email: privacyteam@data-axle.com",
+   "email": "privacyteam@data-axle.com"
+  },
+  {
+   "id": "epsilon",
+   "name": "Epsilon",
+   "priority": 2,
+   "searchURL": "https://epsilon.com/",
+   "optOutURL": "https://epsilon.com",
+   "steps": "Email. HIGH PRIORITY. Major marketing data company. Send Removal as subject to: optout@epsilon.com, abacusoptout@epsilon.com, dataoptout1@epsilon.com, contactus@shoppers-voice.com",
+   "email": "optout@epsilon.com"
+  },
+  {
+   "id": "familytreenow",
+   "name": "FamilyTreeNow",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.familytreenow.com/optout",
+   "steps": "Search yourself on the opt-out page and remove your record."
+  },
+  {
+   "id": "freepeopledirectory",
+   "name": "FreePeopleDirectory",
+   "priority": 2,
+   "searchURL": "https://www.freepeopledirectory.com/",
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "FreePeopleDirectory uses Spokeo's records and its own opt-out link goes to Spokeo. Find your listing (on FreePeopleDirectory or Spokeo), copy the link, and submit it on Spokeo's opt-out page. Confirm by email.",
+   "coveredBy": "spokeo",
+   "needsEmail": true
+  },
+  {
+   "id": "golookup",
+   "name": "GoLookup",
+   "priority": 2,
+   "searchURL": "https://golookup.com/",
+   "optOutURL": "https://golookup.com/remove-my-info",
+   "steps": "Search for your record on golookup.com Copy the URL of your listing Visit golookup.com/remove-my-info Paste the URL and fill in the form Enter your email address if required Submit the request Confirm via email if prompted Check back later to confirm removal"
+  },
+  {
+   "id": "idcrawl",
+   "name": "IDCrawl",
+   "priority": 2,
+   "searchURL": "https://www.idcrawl.com/",
+   "optOutURL": "https://www.idcrawl.com/remove-my-information",
+   "steps": "Open your IDCrawl name page and copy its link. Paste it with your email on the removal page and solve the captcha. Click the link in the email (valid 24 hours), then tick what to take down. Removing IDCrawl doesn't remove the sites it links to.",
+   "email": "support@idcrawl.com",
+   "needsEmail": true
+  },
+  {
+   "id": "instantcheckmate",
+   "name": "Instant Checkmate",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.instantcheckmate.com/opt-out/",
+   "steps": "Use the opt-out page to find and remove your record. If you already did Intelius (PeopleConnect), check here anyway."
+  },
+  {
+   "id": "lexisnexis-accurint",
+   "name": "LexisNexis/Accurint",
+   "priority": 2,
+   "searchURL": "https://lexisnexis.com/",
+   "optOutURL": "https://optout.lexisnexis.com",
+   "steps": "Online form. HIGH PRIORITY. Massive data aggregator. Also opt out of direct marketing at: https://www.lexisnexis.com/privacy/directmarketingopt-out.aspx. Email: privacy.information.mgr@lexisnexis.com",
+   "email": "privacy.information.mgr@lexisnexis.com"
+  },
+  {
+   "id": "moneybot5000",
+   "name": "MoneyBot5000",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.moneybot5000.com/svc/optout/search/optouts",
+   "steps": "Part of the BeenVerified family, but it keeps its own list. Search your name, press Proceed to Opt Out on your profile, enter your email and click the confirmation link (it can take an hour to arrive).",
+   "email": "privacy@ltvco.com",
+   "needsEmail": true
+  },
+  {
+   "id": "nuwber",
+   "name": "Nuwber",
+   "priority": 2,
+   "searchURL": "https://nuwber.com/",
+   "optOutURL": "https://nuwber.com/removal/link",
+   "steps": "Find your profile, copy its link and paste it on the removal page with your email. Click the email link to finish.",
+   "needsEmail": true
+  },
+  {
+   "id": "officialusa",
+   "name": "OfficialUSA",
+   "priority": 2,
+   "searchURL": "https://officialusa.com/",
+   "optOutURL": "https://www.officialusa.com/remove",
+   "steps": "Locate your listing on officialusa.com Copy the URL of your listing Visit officialusa.com/remove Follow the instructions to submit a removal request You may need to email them directly Include your name address and the listing URL Request removal of your information Check back to verify removal"
+  },
+  {
+   "id": "peekyou",
+   "name": "PeekYou",
+   "priority": 2,
+   "searchURL": "https://peekyou.com/",
+   "optOutURL": "https://www.peekyou.com/about/contact/optout",
+   "steps": "Visit peekyou.com/about/contact/optout Search for your profile on PeekYou Copy your profile URL Paste the URL into the opt-out form Submit the request Check back later to confirm removal"
+  },
+  {
+   "id": "peoplefinders",
+   "name": "PeopleFinders",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.peoplefinders.com/opt-out",
+   "steps": "Search yourself on the opt-out page and remove your record."
+  },
+  {
+   "id": "peoplelooker",
+   "name": "PeopleLooker",
+   "priority": 2,
+   "searchURL": "https://peoplelooker.com/",
+   "optOutURL": "https://www.peoplelooker.com/opt-out",
+   "steps": "Visit peoplelooker.com/opt-out Search for your record Select your listing Submit the opt-out request Confirm via email if required Verify removal later"
+  },
+  {
+   "id": "peoplesearchnow",
+   "name": "PeopleSearchNow",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.peoplesearchnow.com/opt-out",
+   "steps": "Search for yourself on the opt-out page and remove your record."
+  },
+  {
+   "id": "peoplesmart",
+   "name": "PeopleSmart",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.peoplesmart.com/app/optout/search",
+   "steps": "Search yourself on the opt-out page, pick your record and confirm by email. This also clears EmailFinder.",
+   "email": "support@peoplesmart.com",
+   "needsEmail": true
+  },
+  {
+   "id": "peoplewin",
+   "name": "PeopleWin",
+   "priority": 2,
+   "searchURL": "https://www.peoplewin.com/",
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "PeopleWin uses Spokeo's records and its own opt-out link goes to Spokeo. Find your listing (on PeopleWin or Spokeo), copy the link, and submit it on Spokeo's opt-out page. Confirm by email.",
+   "coveredBy": "spokeo",
+   "needsEmail": true
+  },
+  {
+   "id": "profilesystems",
+   "name": "Profile Systems",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "Profile Systems uses Spokeo's records and its own opt-out link goes to Spokeo. Find your listing (on Profile Systems or Spokeo), copy the link, and submit it on Spokeo's opt-out page. Confirm by email.",
+   "coveredBy": "spokeo",
+   "needsEmail": true
+  },
+  {
+   "id": "publicrecordsnow",
+   "name": "PublicRecordsNow",
+   "priority": 2,
+   "searchURL": "https://publicrecordsnow.com/",
+   "optOutURL": "https://www.publicrecordsnow.com/optout",
+   "steps": "Find your record on publicrecordsnow.com Copy the URL of the listing Visit publicrecordsnow.com/optout Submit the opt-out request with your listing URL Confirm via email if required Wait for removal to process"
+  },
+  {
+   "id": "radaris",
+   "name": "Radaris",
+   "priority": 2,
+   "searchURL": "https://radaris.com/",
+   "optOutURL": "https://radaris.com/control/privacy",
+   "steps": "Find your profile, copy its link and paste it into the privacy control page. Confirm by email.",
+   "needsEmail": true
+  },
+  {
+   "id": "searchpeoplefree",
+   "name": "SearchPeopleFree",
+   "priority": 2,
+   "searchURL": "https://www.searchpeoplefree.com/",
+   "optOutURL": "https://www.searchpeoplefree.com/opt-out",
+   "steps": "Search by name and by phone number — the same person can show up more than once. Opt out each record."
+  },
+  {
+   "id": "selfienetwork",
+   "name": "Selfie Network",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "Selfie Network uses Spokeo's records and its own opt-out link goes to Spokeo. Find your listing (on Selfie Network or Spokeo), copy the link, and submit it on Spokeo's opt-out page. Confirm by email.",
+   "coveredBy": "spokeo",
+   "needsEmail": true
+  },
+  {
+   "id": "selfiesystems",
+   "name": "Selfie Systems",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "Selfie Systems uses Spokeo's records and its own opt-out link goes to Spokeo. Find your listing (on Selfie Systems or Spokeo), copy the link, and submit it on Spokeo's opt-out page. Confirm by email.",
+   "coveredBy": "spokeo",
+   "needsEmail": true
+  },
+  {
+   "id": "spyfly",
+   "name": "SpyFly",
+   "priority": 2,
+   "searchURL": "https://spyfly.com/",
+   "optOutURL": "https://www.spyfly.com/optout",
+   "steps": "Visit spyfly.com and find your listing Copy the URL of the profile/report page Go to spyfly.com/optout Fill in the form with your details and listing URL Submit the opt-out request Confirm via email if prompted Check back later to verify removal"
+  },
+  {
+   "id": "truthfinder",
+   "name": "TruthFinder",
+   "priority": 2,
+   "searchURL": null,
+   "optOutURL": "https://www.truthfinder.com/opt-out/",
+   "steps": "Use the opt-out page to find and remove your record. Also part of PeopleConnect."
+  },
+  {
+   "id": "us-identify",
+   "name": "US Identify",
+   "priority": 2,
+   "searchURL": "https://usidentify.com/",
+   "optOutURL": "https://www.usidentify.com/optout",
+   "steps": "Find your listing on usidentify.com Copy the URL of your listing Visit usidentify.com/optout Fill out the opt-out form Submit the request Confirm via email if prompted Check back to verify removal"
+  },
+  {
+   "id": "us-search",
+   "name": "US Search",
+   "priority": 2,
+   "searchURL": "https://ussearch.com/",
+   "optOutURL": "https://www.ussearch.com/consumer/optout",
+   "steps": "Visit ussearch.com/consumer/optout Search for your listing Select your record Submit the opt-out request Confirm via email if required Verify removal later"
+  },
+  {
+   "id": "usapeoplesearch",
+   "name": "USA People Search",
+   "priority": 2,
+   "searchURL": "https://www.usa-people-search.com/",
+   "optOutURL": "https://www.usa-people-search.com/removal",
+   "steps": "Search yourself, then submit removal for your record."
+  },
+  {
+   "id": "voterrecords",
+   "name": "VoterRecords",
+   "priority": 2,
+   "searchURL": "https://voterrecords.com/",
+   "optOutURL": "https://voterrecords.com/contact",
+   "steps": "Find your record on voterrecords.com Copy the URL of your record Go to voterrecords.com/contact Fill out the contact form requesting removal Include the URL of your record and your name Submit the request Wait for a response or confirmation Check back later to see if it's removed"
+  },
+  {
+   "id": "411-info",
+   "name": "411 Info",
+   "priority": 3,
+   "searchURL": "https://411.info/",
+   "optOutURL": "https://411.info/manage/",
+   "steps": "Online form. Online removal tool. Search for your listing and follow prompts to remove"
+  },
+  {
+   "id": "absolute-people-search",
+   "name": "Absolute People Search",
+   "priority": 3,
+   "searchURL": "https://absolutepeoplesearch.com/",
+   "optOutURL": "https://absolutepeoplesearch.com/public.php?funct=optout",
+   "steps": "Online form + Email. Submit the online opt-out form and confirm via email"
+  },
+  {
+   "id": "address-search",
+   "name": "Address Search",
+   "priority": 3,
+   "searchURL": "https://addresssearch.com/",
+   "optOutURL": "https://addresssearch.com/remove-info.php",
+   "steps": "Online form. Online removal tool. Follow prompts"
+  },
+  {
+   "id": "advanced-background-checks",
+   "name": "Advanced Background Checks",
+   "priority": 3,
+   "searchURL": "https://advancedbackgroundchecks.com/",
+   "optOutURL": "https://www.advancedbackgroundchecks.com/removal",
+   "steps": "Online form. Online removal tool. Search your name, select record, submit removal"
+  },
+  {
+   "id": "all-area-codes",
+   "name": "All Area Codes",
+   "priority": 3,
+   "searchURL": "https://allareacodes.com/",
+   "optOutURL": "https://www.allareacodes.com/remove_name.htm",
+   "steps": "Online form. Online removal tool for phone number listings"
+  },
+  {
+   "id": "all-people",
+   "name": "All People",
+   "priority": 3,
+   "searchURL": "https://allpeople.com/",
+   "optOutURL": "https://allpeople.com",
+   "steps": "Online (on-site). Find your profile, click Edit List, then choose Remove Listing"
+  },
+  {
+   "id": "america-phonebook",
+   "name": "America Phonebook",
+   "priority": 3,
+   "searchURL": "https://americaphonebook.com/",
+   "optOutURL": "http://www.americaphonebook.com/contact.php",
+   "steps": "Contact form / Email. Use the contact form to request removal. Email: lookupuk@gmail.com",
+   "email": "lookupuk@gmail.com"
+  },
+  {
+   "id": "ancestry",
+   "name": "Ancestry",
+   "priority": 3,
+   "searchURL": "https://ancestry.com/",
+   "optOutURL": "https://ancestry.com",
+   "steps": "Email. Send removal request to support@ancestry.com and customersolutions@ancestry.com. Specify exactly what information you want removed",
+   "email": "support@ancestry.com"
+  },
+  {
+   "id": "apollo",
+   "name": "Apollo",
+   "priority": 3,
+   "searchURL": "https://apollo.io/",
+   "optOutURL": "https://www.apollo.io/privacy-policy/remove/",
+   "steps": "Online form. Business/professional data broker. Online removal form completes the process"
+  },
+  {
+   "id": "archives",
+   "name": "Archives",
+   "priority": 3,
+   "searchURL": "https://archives.com/",
+   "optOutURL": "https://archives.com/optout",
+   "steps": "Online form. Online removal tool. Follow prompts"
+  },
+  {
+   "id": "arrest-facts",
+   "name": "Arrest Facts",
+   "priority": 3,
+   "searchURL": "https://arrestfacts.com/",
+   "optOutURL": "https://arrestfacts.com",
+   "steps": "On-site removal. Click Information Control on any record and follow the removal instructions"
+  },
+  {
+   "id": "background-alert",
+   "name": "Background Alert",
+   "priority": 3,
+   "searchURL": "https://backgroundalert.com/",
+   "optOutURL": "https://www.backgroundalert.com/optout/",
+   "steps": "Online form. Online removal tool completes the process"
+  },
+  {
+   "id": "background-check",
+   "name": "Background Check",
+   "priority": 3,
+   "searchURL": "https://backgroundcheck.run/",
+   "optOutURL": "https://backgroundcheck.run/ng/control/privacy",
+   "steps": "Online form. Online removal tool. Search and submit removal"
+  },
+  {
+   "id": "background-checkers",
+   "name": "Background Checkers",
+   "priority": 3,
+   "searchURL": "https://backgroundcheckers.net/",
+   "optOutURL": "https://www.backgroundcheckers.net/optOut/name/landing",
+   "steps": "Online form. Online removal tool. Search by name and submit"
+  },
+  {
+   "id": "batchdialer",
+   "name": "BatchDialer",
+   "priority": 3,
+   "searchURL": "https://batchdialer.com/",
+   "optOutURL": "https://batchdialer.com/personal-information",
+   "steps": "Online form. Real estate lead service. Online removal form"
+  },
+  {
+   "id": "batchleads",
+   "name": "BatchLeads",
+   "priority": 3,
+   "searchURL": "https://batchleads.io/",
+   "optOutURL": "https://batchleads.io/personal-information",
+   "steps": "Online form. Real estate lead service. Online removal form"
+  },
+  {
+   "id": "batchskiptracing",
+   "name": "BatchSkipTracing",
+   "priority": 3,
+   "searchURL": "https://batchskiptracing.com/",
+   "optOutURL": "https://batchskiptracing.com/personal-information",
+   "steps": "Online form. Skip-tracing service. Online removal form"
+  },
+  {
+   "id": "blockshopper",
+   "name": "BlockShopper",
+   "priority": 3,
+   "searchURL": "https://blockshopper.com/",
+   "optOutURL": "https://blockshopper.com",
+   "steps": "Email. Email scarlett@blockshopper.com. Must cite special circumstances. Expect resistance",
+   "email": "scarlett@blockshopper.com"
+  },
+  {
+   "id": "buzzfile",
+   "name": "Buzzfile",
+   "priority": 3,
+   "searchURL": "https://buzzfile.com/",
+   "optOutURL": "http://www.buzzfile.com/Company/Remove",
+   "steps": "Online form. Business directory. Online removal tool"
+  },
+  {
+   "id": "call-truth",
+   "name": "Call Truth",
+   "priority": 3,
+   "searchURL": "https://calltruth.com/",
+   "optOutURL": "https://www.calltruth.com/opt_out.php",
+   "steps": "Online form. Phone lookup service. Online opt-out form"
+  },
+  {
+   "id": "callyo",
+   "name": "Callyo",
+   "priority": 3,
+   "searchURL": "https://callyo.com/",
+   "optOutURL": "https://callyo.com",
+   "steps": "Email. Email callyo.support@motorolasolutions.com demanding removal",
+   "email": "callyo.support@motorolasolutions.com"
+  },
+  {
+   "id": "cars-owners",
+   "name": "Cars Owners",
+   "priority": 3,
+   "searchURL": "https://carsowners.net/",
+   "optOutURL": "https://carsowners.net/feedback",
+   "steps": "Online contact form. Vehicle records site. Submit removal through https://carsowners.net/feedback"
+  },
+  {
+   "id": "catalog-choice",
+   "name": "Catalog Choice",
+   "priority": 3,
+   "searchURL": "https://catalogchoice.org/",
+   "optOutURL": "https://catalogchoice.org",
+   "steps": "Email. Junk mail opt-out service. Email support@catalogchoice.org for removal",
+   "email": "support@catalogchoice.org"
+  },
+  {
+   "id": "cell-revealer",
+   "name": "Cell Revealer",
+   "priority": 3,
+   "searchURL": "https://cellrevealer.com/",
+   "optOutURL": "https://cellrevealer.com",
+   "steps": "On-site removal. Click the removal link next to your entry. Email: support@cellrevealer.com",
+   "email": "support@cellrevealer.com"
+  },
+  {
+   "id": "centeda",
+   "name": "Centeda",
+   "priority": 3,
+   "searchURL": "https://centeda.com/",
+   "optOutURL": "https://centeda.com/ng/control/privacy",
+   "steps": "Online form. Online removal tool completes the process"
+  },
+  {
+   "id": "check-secrets",
+   "name": "Check Secrets",
+   "priority": 3,
+   "searchURL": "https://checksecrets.com/",
+   "optOutURL": "https://www.checksecrets.com/optOut/name/landing",
+   "steps": "Online form. Online removal tool. Search by name and submit"
+  },
+  {
+   "id": "checkr",
+   "name": "Checkr",
+   "priority": 3,
+   "searchURL": "https://checkr.com/",
+   "optOutURL": "https://candidate.checkr.com/privacy/delete",
+   "steps": "Online form. Employment background check service. Online deletion request form"
+  },
+  {
+   "id": "city-data",
+   "name": "City-Data",
+   "priority": 3,
+   "searchURL": "https://city-data.com/",
+   "optOutURL": "https://www.city-data.com/privacy-form.php?w=usget",
+   "steps": "Online form. Community/demographics site. Online removal form. Also email: legal@city-data.com",
+   "email": "legal@city-data.com"
+  },
+  {
+   "id": "clustal",
+   "name": "Clustal",
+   "priority": 3,
+   "searchURL": "https://www.clustal.org/",
+   "optOutURL": "https://www.clustal.org/privacy-control",
+   "steps": "Open your full record, copy its link and paste it into the privacy control page. Confirm by email.",
+   "needsEmail": true
+  },
+  {
+   "id": "clustr-maps",
+   "name": "Clustr Maps",
+   "priority": 3,
+   "searchURL": "https://clustrmaps.com/",
+   "optOutURL": "https://clustrmaps.com/bl/opt-out",
+   "steps": "Online form. People mapping service. Online opt-out form"
+  },
+  {
+   "id": "confidential-phone-lookup",
+   "name": "Confidential Phone Lookup",
+   "priority": 3,
+   "searchURL": "https://confidentialphonelookup.com/",
+   "optOutURL": "https://confidentialphonelookup.com",
+   "steps": "On-site removal. Highlight your entry and click Do Not Display"
+  },
+  {
+   "id": "connected-investors",
+   "name": "Connected Investors",
+   "priority": 3,
+   "searchURL": "https://connectedinvestors.com/",
+   "optOutURL": "https://connectedinvestors.com/content/do-not-sell",
+   "steps": "Online form. Real estate investor platform. Online Do Not Sell form"
+  },
+  {
+   "id": "contact-out",
+   "name": "Contact Out",
+   "priority": 3,
+   "searchURL": "https://contactout.com/",
+   "optOutURL": "https://contactout.com/optout",
+   "steps": "Online form or Email. Professional contact finder. Online form or email support@contactout.com",
+   "email": "support@contactout.com"
+  },
+  {
+   "id": "corporation-wiki",
+   "name": "Corporation Wiki",
+   "priority": 3,
+   "searchURL": "https://corporationwiki.com/",
+   "optOutURL": "https://www.corporationwiki.com/profiles/public",
+   "steps": "Online form. Business/officer records. Online removal tool. Email: admin@corporationwiki.com",
+   "email": "admin@corporationwiki.com"
+  },
+  {
+   "id": "councilon",
+   "name": "Councilon",
+   "priority": 3,
+   "searchURL": "https://councilon.com/",
+   "optOutURL": "https://councilon.com/ex/control/privacy",
+   "steps": "Online form. Online removal tool completes the process"
+  },
+  {
+   "id": "datachk",
+   "name": "DataChk",
+   "priority": 3,
+   "searchURL": "https://datacheckinc.com/",
+   "optOutURL": "https://www.datacheckinc.com/contact/",
+   "steps": "Email. Submit through https://www.datacheckinc.com/contact/. Removal covers several subsidiaries"
+  },
+  {
+   "id": "dataveria",
+   "name": "DataVeria",
+   "priority": 3,
+   "searchURL": "https://dataveria.com/",
+   "optOutURL": "https://dataveria.com/ng/control/privacy",
+   "steps": "Online form. Online removal tool completes the process"
+  },
+  {
+   "id": "delvepoint",
+   "name": "DelvePoint",
+   "priority": 3,
+   "searchURL": "https://delvepoint.com/",
+   "optOutURL": "https://delvepoint.com",
+   "steps": "Email. Send removal request to customerservice@delvepoint.com",
+   "email": "customerservice@delvepoint.com"
+  },
+  {
+   "id": "dexknows",
+   "name": "DexKnows",
+   "priority": 3,
+   "searchURL": "https://dexknows.com/",
+   "optOutURL": "https://tinyurl.com/dexknowscom",
+   "steps": "Online form. Owned by Thryv. Same process removes from SuperPages, Real Yellow Pages, and Yellow Pages"
+  },
+  {
+   "id": "directmail",
+   "name": "DirectMail",
+   "priority": 3,
+   "searchURL": "https://directmail.com/",
+   "optOutURL": "https://www.directmail.com/mail_preference/",
+   "steps": "Online form. Direct mail opt-out. Also email: donotmaillist@directmail.com",
+   "email": "donotmaillist@directmail.com"
+  },
+  {
+   "id": "dma-choice",
+   "name": "DMA Choice",
+   "priority": 3,
+   "searchURL": "https://dmachoice.org/",
+   "optOutURL": "https://www.ims-dm.com/cgi/dncc.php",
+   "steps": "Online form. Direct Marketing Association. Opt out of direct mail, telemarketing, and email marketing"
+  },
+  {
+   "id": "emailfinder",
+   "name": "EmailFinder",
+   "priority": 3,
+   "searchURL": null,
+   "optOutURL": "https://www.peoplesmart.com/app/optout/search",
+   "steps": "EmailFinder's own opt-out page is gone; it's removed through PeopleSmart's opt-out.",
+   "coveredBy": "peoplesmart",
+   "needsEmail": true
+  },
+  {
+   "id": "everyjoe",
+   "name": "EveryJoe",
+   "priority": 3,
+   "searchURL": "https://www.everyjoe.com/",
+   "optOutURL": "https://www.everyjoe.com/do-not-sell/",
+   "steps": "Copy your listing's link and paste it into the opt-out page."
+  },
+  {
+   "id": "fama",
+   "name": "Fama",
+   "priority": 3,
+   "searchURL": "https://fama.io/",
+   "optOutURL": "https://fama.io",
+   "steps": "Email. Social media screening company. Email privacy@fama.io with removal request",
+   "email": "privacy@fama.io"
+  },
+  {
+   "id": "familysearch",
+   "name": "FamilySearch",
+   "priority": 3,
+   "searchURL": "https://familysearch.org/",
+   "optOutURL": "https://familysearch.org",
+   "steps": "Email. Genealogy site. Email DataPrivacyOfficer@ldschurch.org with removal request",
+   "email": "DataPrivacyOfficer@ldschurch.org"
+  },
+  {
+   "id": "fastpeoplesearch-io",
+   "name": "FastPeopleSearch.io",
+   "priority": 3,
+   "searchURL": "https://fastpeoplesearch.io/",
+   "optOutURL": "https://fastpeoplesearch.io/remove-my-info",
+   "steps": "Online form. Requires Gmail account. Separate from FastPeopleSearch.com. Removal within 24 hours"
+  },
+  {
+   "id": "fax-vin",
+   "name": "Fax VIN",
+   "priority": 3,
+   "searchURL": "https://faxvin.com/",
+   "optOutURL": "https://www.faxvin.com/company/contact",
+   "steps": "Online contact form. Vehicle history site. Submit through https://www.faxvin.com/company/contact"
+  },
+  {
+   "id": "find-people-search",
+   "name": "Find People Search",
+   "priority": 3,
+   "searchURL": "https://findpeoplesearch.com/",
+   "optOutURL": "https://findpeoplesearch.com/customerservice/",
+   "steps": "Online form. Online removal tool. Follow prompts"
+  },
+  {
+   "id": "free-background-checks",
+   "name": "Free Background Checks",
+   "priority": 3,
+   "searchURL": "https://freebackgroundcheck.us/",
+   "optOutURL": "https://freebackgroundcheck.us",
+   "steps": "Email. Email privacy@infopay.com with removal details",
+   "email": "privacy@infopay.com"
+  },
+  {
+   "id": "free-phone-tracer",
+   "name": "Free Phone Tracer",
+   "priority": 3,
+   "searchURL": "https://freephonetracer.com/",
+   "optOutURL": "https://www.beenverified.com/app/optout/search",
+   "steps": "Online form. Owned by BeenVerified. Use BeenVerified opt-out"
+  },
+  {
+   "id": "glad-i-know",
+   "name": "Glad I Know",
+   "priority": 3,
+   "searchURL": "https://gladiknow.com/",
+   "optOutURL": "https://gladiknow.com/opt-out",
+   "steps": "Online form. Online removal tool. Follow prompts"
+  },
+  {
+   "id": "grey-pages",
+   "name": "Grey Pages",
+   "priority": 3,
+   "searchURL": "https://grey-pages.com/",
+   "optOutURL": "https://www.grey-pages.com/removal",
+   "steps": "Online form. Online removal tool completes the process"
+  },
+  {
+   "id": "haines-company",
+   "name": "Haines & Company",
+   "priority": 3,
+   "searchURL": "https://haines.com/",
+   "optOutURL": "https://haines.com",
+   "steps": "Email. Directory publisher. Send name and address to criscros@haines.com, info@haines.com, custserv@haines.com",
+   "email": "criscros@haines.com"
+  },
+  {
+   "id": "hpcc-usa",
+   "name": "HPCC-USA",
+   "priority": 3,
+   "searchURL": "https://hpcc-usa.org/",
+   "optOutURL": "https://www.hpcc-usa.org/research/change-listing.html",
+   "steps": "Online form. Online removal/change listing tool"
+  },
+  {
+   "id": "id-true",
+   "name": "ID True",
+   "priority": 3,
+   "searchURL": "https://idtrue.com/",
+   "optOutURL": "https://www.idtrue.com/optout/",
+   "steps": "Online form. Online removal tool. Follow prompts"
+  },
+  {
+   "id": "idcaller",
+   "name": "IDCaller",
+   "priority": 3,
+   "searchURL": "https://idcaller.com/",
+   "optOutURL": "https://idcaller.com",
+   "steps": "Email. Email support@IDCaller.com to request deletion. Response within 30 days",
+   "email": "support@IDCaller.com"
+  },
+  {
+   "id": "infopay",
+   "name": "Infopay",
+   "priority": 3,
+   "searchURL": "https://infopay.com/",
+   "optOutURL": "https://infopay.com",
+   "steps": "Email. Submit request to privacy@infopay.com. Operates several subsidiary sites",
+   "email": "privacy@infopay.com"
+  },
+  {
+   "id": "infospace",
+   "name": "Infospace",
+   "priority": 3,
+   "searchURL": "https://infospace.com/",
+   "optOutURL": "https://infospace.intelius.com/optout.php",
+   "steps": "Online form. Uses Intelius data. Online removal tool"
+  },
+  {
+   "id": "infotracer",
+   "name": "InfoTracer",
+   "priority": 3,
+   "searchURL": "https://www.infotracer.com/",
+   "optOutURL": "https://infotracer.com/optout/",
+   "steps": "Search yourself, then fill in the opt-out form."
+  },
+  {
+   "id": "irbsearch",
+   "name": "IRBSearch",
+   "priority": 3,
+   "searchURL": "https://irbsearch.com/",
+   "optOutURL": "https://irbsearch.com",
+   "steps": "Email. Professional investigation tool. Email customercare@irbsearch.com",
+   "email": "customercare@irbsearch.com"
+  },
+  {
+   "id": "locate-family",
+   "name": "Locate Family",
+   "priority": 3,
+   "searchURL": "https://locatefamily.com/",
+   "optOutURL": "https://www.locatefamily.com/removal2.html",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "mastercard",
+   "name": "Mastercard",
+   "priority": 3,
+   "searchURL": "https://mastercard.us/",
+   "optOutURL": "https://www.mastercard.us/en-us/vision/corp-responsibility/commitment-to-privacy/privacy/data-analytics-opt-out.html",
+   "steps": "Online form. Opt out of data analytics and email marketing"
+  },
+  {
+   "id": "melissa-data",
+   "name": "Melissa Data",
+   "priority": 3,
+   "searchURL": "https://melissadata.com/",
+   "optOutURL": "https://melissadata.com",
+   "steps": "Email. Address verification company. Email paul.nelson@melissa.com or brett.mcwhorter@melissa.com",
+   "email": "paul.nelson@melissa.com"
+  },
+  {
+   "id": "meritpages",
+   "name": "Meritpages",
+   "priority": 3,
+   "searchURL": "https://meritpages.com/",
+   "optOutURL": "https://meritpages.com",
+   "steps": "Email. Academic achievement site. Email help@meritpages.com",
+   "email": "help@meritpages.com"
+  },
+  {
+   "id": "mugshotlook",
+   "name": "MugshotLook",
+   "priority": 3,
+   "searchURL": "https://mugshotlook.com/",
+   "optOutURL": "https://www.mugshotlook.com/optOut/name/landing",
+   "steps": "Online form. Online removal tool. Search by name and submit"
+  },
+  {
+   "id": "myheritage",
+   "name": "MyHeritage",
+   "priority": 3,
+   "searchURL": "https://myheritage.com/",
+   "optOutURL": "https://faq.myheritage.com/en/article/how-do-i-delete-my-account-on-myheritage",
+   "steps": "Online + Email. Genealogy site. Follow account deletion instructions or email support@myheritage.com",
+   "email": "support@myheritage.com"
+  },
+  {
+   "id": "national-cellular-directory",
+   "name": "National Cellular Directory",
+   "priority": 3,
+   "searchURL": "https://nationalcellulardirectory.com/",
+   "optOutURL": "https://www.nationalcellulardirectory.com/optout/",
+   "steps": "Online form. Cell phone directory. Online opt-out form"
+  },
+  {
+   "id": "nationalpublicdata",
+   "name": "National Public Data",
+   "priority": 3,
+   "searchURL": "https://nationalpublicdata.com/search",
+   "optOutURL": "https://nationalpublicdata.com/optout.html",
+   "steps": "This site leaked billions of records in 2024 and has since come back online. Search for yourself, copy the record link and submit it on the opt-out form, then confirm by email.",
+   "needsEmail": true
+  },
+  {
+   "id": "neighbor-report",
+   "name": "Neighbor Report",
+   "priority": 3,
+   "searchURL": "https://neighbor.report/",
+   "optOutURL": "https://neighbor.report/remove",
+   "steps": "Online form. Address/neighbor info. Online removal tool. Email: help@neighbor.report",
+   "email": "help@neighbor.report"
+  },
+  {
+   "id": "newenglandfacts",
+   "name": "NewEnglandFacts",
+   "priority": 3,
+   "searchURL": "https://newenglandfacts.com/",
+   "optOutURL": "https://newenglandfacts.com/ng/control/privacy",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "number-guru",
+   "name": "Number Guru",
+   "priority": 3,
+   "searchURL": "https://numberguru.com/",
+   "optOutURL": "https://www.beenverified.com/app/optout/search",
+   "steps": "Online form. Owned by BeenVerified. Use BeenVerified opt-out"
+  },
+  {
+   "id": "ok-caller",
+   "name": "OK Caller",
+   "priority": 3,
+   "searchURL": "https://okcaller.com/",
+   "optOutURL": "https://okcaller.com",
+   "steps": "On-site removal. Click any Opt-out or Unlist option in results"
+  },
+  {
+   "id": "old-friends",
+   "name": "Old Friends",
+   "priority": 3,
+   "searchURL": "https://old-friends.co/",
+   "optOutURL": "https://old-friends.co",
+   "steps": "On-site removal. Hover over your name for removal option. Email: support@old-friends.co",
+   "email": "support@old-friends.co"
+  },
+  {
+   "id": "old-phone-book",
+   "name": "Old Phone Book",
+   "priority": 3,
+   "searchURL": "https://oldphonebook.com/",
+   "optOutURL": "https://oldphonebook.com",
+   "steps": "On-site + Email. Click removal link below results. Email: lookupuk@gmail.com",
+   "email": "lookupuk@gmail.com"
+  },
+  {
+   "id": "open-corporates",
+   "name": "Open Corporates",
+   "priority": 3,
+   "searchURL": "https://opencorporates.com/",
+   "optOutURL": "https://opencorporates.com",
+   "steps": "Email. Corporate records. Email data.protection@opencorporates.com",
+   "email": "data.protection@opencorporates.com"
+  },
+  {
+   "id": "ourstates",
+   "name": "OurStates",
+   "priority": 3,
+   "searchURL": "https://ourstates.org/",
+   "optOutURL": "https://ourstates.org/opt-out",
+   "steps": "Online form. Use caution - some users report scam-like behavior"
+  },
+  {
+   "id": "ownerly",
+   "name": "Ownerly",
+   "priority": 3,
+   "searchURL": "https://ownerly.com/",
+   "optOutURL": "https://www.beenverified.com/app/optout/search",
+   "steps": "Online form. Owned by BeenVerified. Use BeenVerified opt-out"
+  },
+  {
+   "id": "peep-lookup",
+   "name": "Peep Lookup",
+   "priority": 3,
+   "searchURL": "https://peeplookup.com/",
+   "optOutURL": "https://www.peeplookup.com/opt_out",
+   "steps": "Online form. Online removal tool. Follow prompts"
+  },
+  {
+   "id": "people-by-phone",
+   "name": "People By Phone",
+   "priority": 3,
+   "searchURL": "https://peoplebyphone.com/",
+   "optOutURL": "https://www.peoplebyphone.com/remove-my-number/",
+   "steps": "Online form. Phone number directory. Online removal tool"
+  },
+  {
+   "id": "people-data-labs",
+   "name": "People Data Labs",
+   "priority": 3,
+   "searchURL": "https://peopledatalabs.com/",
+   "optOutURL": "https://www.peopledatalabs.com/opt-out-form",
+   "steps": "Online form. Business data enrichment. Email: privacy@peopledatalabs.com",
+   "email": "privacy@peopledatalabs.com"
+  },
+  {
+   "id": "people-finder",
+   "name": "People Finder",
+   "priority": 3,
+   "searchURL": "https://peoplefinder.com/",
+   "optOutURL": "https://peoplefinder.com/optout.php",
+   "steps": "Online form + Email. Uses Intelius data. Online removal with email verification"
+  },
+  {
+   "id": "people-search-123",
+   "name": "People Search 123",
+   "priority": 3,
+   "searchURL": "https://peoplesearch123.com/",
+   "optOutURL": "https://www.peoplesearch123.com/optOut/name/landing",
+   "steps": "Online form. Online removal tool. Search by name and submit"
+  },
+  {
+   "id": "people-search-expert",
+   "name": "People Search Expert",
+   "priority": 3,
+   "searchURL": "https://peoplesearchexpert.com/",
+   "optOutURL": "https://peoplesearchexpert.com",
+   "steps": "On-site removal. Email: support@peoplesearchexpert.com",
+   "email": "support@peoplesearchexpert.com"
+  },
+  {
+   "id": "people-searcher",
+   "name": "People Searcher",
+   "priority": 3,
+   "searchURL": "https://peoplesearcher.com/",
+   "optOutURL": "https://www.peoplesearcher.com/optOut/name/landing",
+   "steps": "Online form. Online removal tool. Search by name and submit"
+  },
+  {
+   "id": "people-trace-uk",
+   "name": "People Trace UK",
+   "priority": 3,
+   "searchURL": "https://peopletraceuk.com/",
+   "optOutURL": "https://www.peopletraceuk.com/RequestRecordRemoval.asp",
+   "steps": "Online form. UK-based people search"
+  },
+  {
+   "id": "people-whiz",
+   "name": "People Whiz",
+   "priority": 3,
+   "searchURL": "https://peoplewhiz.com/",
+   "optOutURL": "https://www.peoplewhiz.com/remove-my-info",
+   "steps": "Online form + Email. Online form plus email confirmation"
+  },
+  {
+   "id": "people-search",
+   "name": "People-Search",
+   "priority": 3,
+   "searchURL": "https://people-search.org/",
+   "optOutURL": "https://people-search.org",
+   "steps": "On-site removal. Email: info@people-search.org",
+   "email": "info@people-search.org"
+  },
+  {
+   "id": "peoplebackgroundcheck",
+   "name": "PeopleBackgroundCheck",
+   "priority": 3,
+   "searchURL": "https://people-background-check.com/",
+   "optOutURL": "https://people-background-check.com/ng/control/privacy",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "peoplebyname",
+   "name": "PeopleByName",
+   "priority": 3,
+   "searchURL": "https://www.peoplebyname.com/people",
+   "optOutURL": "https://www.peoplebyname.com/remove.php",
+   "steps": "Look up your name, then remove each record that's yours."
+  },
+  {
+   "id": "persopo",
+   "name": "Persopo",
+   "priority": 3,
+   "searchURL": "https://persopo.com/",
+   "optOutURL": "https://persopo.com",
+   "steps": "Email. Email support@persopo.com. Covers several subsidiaries",
+   "email": "support@persopo.com"
+  },
+  {
+   "id": "phone-owner",
+   "name": "Phone Owner",
+   "priority": 3,
+   "searchURL": "https://phoneowner.com/",
+   "optOutURL": "https://phoneowner.com",
+   "steps": "Email. Email customer-service@phoneowner.com",
+   "email": "customer-service@phoneowner.com"
+  },
+  {
+   "id": "phonebooks",
+   "name": "Phonebooks",
+   "priority": 3,
+   "searchURL": "https://phonebooks.com/",
+   "optOutURL": "https://phonebooks.com",
+   "steps": "On-site removal. Find Request That This Person Be Removed in bottom right of results"
+  },
+  {
+   "id": "pipl",
+   "name": "Pipl",
+   "priority": 3,
+   "searchURL": "https://pipl.com/",
+   "optOutURL": "https://pipl.com/personal-information-removal-request",
+   "steps": "Online form + Email. Professional identity search. Email: support@pipl.com",
+   "email": "support@pipl.com"
+  },
+  {
+   "id": "plaid",
+   "name": "Plaid",
+   "priority": 3,
+   "searchURL": "https://plaid.com/",
+   "optOutURL": "https://plaid.com/legal/data-protection-request-form/",
+   "steps": "Online form + Email. Financial data service. Email: privacy@plaid.com",
+   "email": "privacy@plaid.com"
+  },
+  {
+   "id": "private-records",
+   "name": "Private Records",
+   "priority": 3,
+   "searchURL": "https://privaterecords.net/",
+   "optOutURL": "https://www.privaterecords.net/optOut/name/landing",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "privateeye",
+   "name": "PrivateEye",
+   "priority": 3,
+   "searchURL": "https://www.privateeye.com/",
+   "optOutURL": "https://www.privateeye.com/removal",
+   "steps": "Start a removal request; the site sends a link to a form to finish.",
+   "needsEmail": true
+  },
+  {
+   "id": "pro-people-search",
+   "name": "Pro People Search",
+   "priority": 3,
+   "searchURL": "https://propeoplesearch.com/",
+   "optOutURL": "https://propeoplesearch.com/optout",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "property-shark",
+   "name": "Property Shark",
+   "priority": 3,
+   "searchURL": "https://propertyshark.com/",
+   "optOutURL": "https://propertyshark.com",
+   "steps": "Email. Email support@propertyshark.com",
+   "email": "support@propertyshark.com"
+  },
+  {
+   "id": "pub360",
+   "name": "Pub360",
+   "priority": 3,
+   "searchURL": "https://pub360.com/",
+   "optOutURL": "https://pub360.com/ng/control/privacy",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "public-data-usa",
+   "name": "Public Data USA",
+   "priority": 3,
+   "searchURL": "https://publicdatausa.com/",
+   "optOutURL": "https://publicdatausa.com/remove.php",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "public-info-services",
+   "name": "Public Info Services",
+   "priority": 3,
+   "searchURL": "https://publicinfoservices.com/",
+   "optOutURL": "https://www.publicinfoservices.com/help-center/remove-me-from-website",
+   "steps": "Online form. Email: support@publicinfoservices.com",
+   "email": "support@publicinfoservices.com"
+  },
+  {
+   "id": "public-records-search",
+   "name": "Public Records Search",
+   "priority": 3,
+   "searchURL": "https://publicrecords.com/",
+   "optOutURL": "https://publicrecords.com",
+   "steps": "Online form. Owned by Intelius"
+  },
+  {
+   "id": "publishers-clearing-house",
+   "name": "Publishers Clearing House",
+   "priority": 3,
+   "searchURL": "https://pch.com/",
+   "optOutURL": "https://pch.com",
+   "steps": "Email. Email privacychoices@pchmail.com",
+   "email": "privacychoices@pchmail.com"
+  },
+  {
+   "id": "quick-people-trace",
+   "name": "Quick People Trace",
+   "priority": 3,
+   "searchURL": "https://quickpeopletrace.com/",
+   "optOutURL": "https://www.peoplefinders.com/opt-out#IT",
+   "steps": "Online form + Email. Uses PeopleFinders data"
+  },
+  {
+   "id": "realpeoplesearch",
+   "name": "RealPeopleSearch",
+   "priority": 3,
+   "searchURL": "https://realpeoplesearch.com/",
+   "optOutURL": "https://realpeoplesearch.com",
+   "steps": "Online form. Requires Gmail account. Find profile, copy URL, click Remove My Info"
+  },
+  {
+   "id": "realtyhop",
+   "name": "RealtyHop",
+   "priority": 3,
+   "searchURL": "https://www.realtyhop.com/",
+   "optOutURL": "https://www.realtyhop.com/resources/realtyhop-redaction-request-system/",
+   "steps": "Find your property record and use the redaction request page to remove your name. Repeat for each record.",
+   "email": "privacy-realtyhop@renthop.com"
+  },
+  {
+   "id": "rehold",
+   "name": "Rehold",
+   "priority": 3,
+   "searchURL": "https://rehold.com/",
+   "optOutURL": "https://rehold.com",
+   "steps": "On-site removal. Click Information Control on right side. Email: customer-support@rehold.com",
+   "email": "customer-support@rehold.com"
+  },
+  {
+   "id": "retailmenot-redplum",
+   "name": "RetailMeNot/Redplum",
+   "priority": 3,
+   "searchURL": "https://retailmenot.com/",
+   "optOutURL": "https://retailmenot.com",
+   "steps": "Online contact form. Request removal through help.retailmenot.com"
+  },
+  {
+   "id": "reveal-name",
+   "name": "Reveal Name",
+   "priority": 3,
+   "searchURL": "https://revealname.com/",
+   "optOutURL": "https://www.revealname.com/opt_out",
+   "steps": "Online form. Must know the full URL of your profile"
+  },
+  {
+   "id": "reveal-phone-owner",
+   "name": "Reveal Phone Owner",
+   "priority": 3,
+   "searchURL": "https://revealphoneowner.com/",
+   "optOutURL": "https://www.revealphoneowner.com/data-removal",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "reverse-phone-lookup",
+   "name": "Reverse Phone Lookup",
+   "priority": 3,
+   "searchURL": "https://reversephonelookup.com/",
+   "optOutURL": "https://reversephonelookup.com",
+   "steps": "Online form. Owned by Intelius"
+  },
+  {
+   "id": "sales-spider",
+   "name": "Sales Spider",
+   "priority": 3,
+   "searchURL": "https://salespider.com/",
+   "optOutURL": "http://salespidermedia.com/opt-out-and-information-removal.php",
+   "steps": "Online form. Business directory. Select Delete this profile"
+  },
+  {
+   "id": "search-bug",
+   "name": "Search Bug",
+   "priority": 3,
+   "searchURL": "https://searchbug.com/",
+   "optOutURL": "https://www.searchbug.com/peoplefinder/how-to-remove.aspx",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "searchquarry",
+   "name": "SearchQuarry",
+   "priority": 3,
+   "searchURL": "https://www.searchquarry.com/",
+   "optOutURL": "https://members.searchquarry.com/removeMyData/",
+   "steps": "If you're listed, submit the removal form and confirm by email.",
+   "needsEmail": true
+  },
+  {
+   "id": "selfie-systems",
+   "name": "Selfie Systems",
+   "priority": 3,
+   "searchURL": "https://selfie.systems/",
+   "optOutURL": "https://www.spokeo.com/optout",
+   "steps": "Online form. Owned by Spokeo"
+  },
+  {
+   "id": "socialcatfish",
+   "name": "Social Catfish",
+   "priority": 3,
+   "searchURL": "https://socialcatfish.com/",
+   "optOutURL": "https://socialcatfish.com/opt-out/",
+   "steps": "Note each page that shows your info, then request removal of those links on the opt-out page.",
+   "needsEmail": true
+  },
+  {
+   "id": "spy-dialer",
+   "name": "Spy Dialer",
+   "priority": 3,
+   "searchURL": "https://spydialer.com/",
+   "optOutURL": "https://www.spydialer.com/optout.aspx",
+   "steps": "Online form. Reverse phone lookup"
+  },
+  {
+   "id": "spytox",
+   "name": "Spytox",
+   "priority": 3,
+   "searchURL": "https://spytox.com/",
+   "optOutURL": "https://www.spytox.com/opt_out",
+   "steps": "Online form + Email. Email: hello@spytox.com",
+   "email": "hello@spytox.com"
+  },
+  {
+   "id": "state-records",
+   "name": "State Records",
+   "priority": 3,
+   "searchURL": "https://staterecords.org/",
+   "optOutURL": "https://infotracer.com/optout/",
+   "steps": "Online form. Uses Infotracer data"
+  },
+  {
+   "id": "super-pages",
+   "name": "Super Pages",
+   "priority": 3,
+   "searchURL": "https://superpages.com/",
+   "optOutURL": "https://tinyurl.com/dexknowscom",
+   "steps": "Online form. Owned by Thryv. Same removal as DexKnows"
+  },
+  {
+   "id": "sync-me",
+   "name": "Sync Me",
+   "priority": 3,
+   "searchURL": "https://sync.me/",
+   "optOutURL": "https://sync.me/optout/",
+   "steps": "Online form. Caller ID app. Submit phone number to remove"
+  },
+  {
+   "id": "telephone-directories",
+   "name": "Telephone Directories",
+   "priority": 3,
+   "searchURL": "https://telephonedirectories.us/",
+   "optOutURL": "https://www.telephonedirectories.us/Edit_Records",
+   "steps": "Online form. Online removal/edit tool"
+  },
+  {
+   "id": "tenn-help",
+   "name": "Tenn Help",
+   "priority": 3,
+   "searchURL": "https://tennhelp.com/",
+   "optOutURL": "https://www.tennhelp.com/public-resources/change-listing.html",
+   "steps": "Online form. Online removal/change listing tool"
+  },
+  {
+   "id": "the-real-yellow-pages",
+   "name": "The Real Yellow Pages",
+   "priority": 3,
+   "searchURL": "https://therealyellowpages.com/",
+   "optOutURL": "https://tinyurl.com/dexknowscom",
+   "steps": "Online form. Owned by Thryv. Same removal as DexKnows"
+  },
+  {
+   "id": "thomson-reuters-westlaw-clear",
+   "name": "Thomson Reuters/Westlaw/CLEAR",
+   "priority": 3,
+   "searchURL": "https://thomsonreuters.com/",
+   "optOutURL": "https://privacyportal-cdn.onetrust.com/dsarwebform/dbf5ae8a-0a6a-4f4b-b527-7f94d0de6bbc/5dc91c0f-f1b7-4b6e-9d42-76043adaf72d.html",
+   "steps": "Online form. Major legal/professional data provider. Email: privacy.issues@thomsonreuters.com",
+   "email": "privacy.issues@thomsonreuters.com"
+  },
+  {
+   "id": "tlo-transunion",
+   "name": "TLO (TransUnion)",
+   "priority": 3,
+   "searchURL": "https://tlo.com/",
+   "optOutURL": "https://service.transunion.com/dss/ccpa_optout.page",
+   "steps": "Online form + Email. Professional skip-tracing. Also email CustomerSupport@TLO.com and TLOxp@transunion.com",
+   "email": "CustomerSupport@TLO.com"
+  },
+  {
+   "id": "true-caller",
+   "name": "True Caller",
+   "priority": 3,
+   "searchURL": "https://truecaller.com/",
+   "optOutURL": "https://www.truecaller.com/unlisting",
+   "steps": "Online form. Caller ID app. Enter phone number to remove"
+  },
+  {
+   "id": "truepeoplesearch-net",
+   "name": "TruePeopleSearch.net",
+   "priority": 3,
+   "searchURL": "https://truepeoplesearch.net/",
+   "optOutURL": "https://truepeoplesearch.net/remove-my-info",
+   "steps": "Email. Separate from TruePeopleSearch.com. Email support@truepeoplesearch.net",
+   "email": "support@truepeoplesearch.net"
+  },
+  {
+   "id": "ufind",
+   "name": "UFind",
+   "priority": 3,
+   "searchURL": "https://ufind.name/",
+   "optOutURL": "https://ufind.name",
+   "steps": "Email. Email support@ufind.name",
+   "email": "support@ufind.name"
+  },
+  {
+   "id": "unitedstatesphonebook",
+   "name": "United States Phone Book",
+   "priority": 3,
+   "searchURL": "https://www.unitedstatesphonebook.com/search.php",
+   "optOutURL": "https://www.unitedstatesphonebook.com/contact.php",
+   "steps": "If listed, enter the phone number and ZIP code shown to request removal."
+  },
+  {
+   "id": "unmask",
+   "name": "UnMask",
+   "priority": 3,
+   "searchURL": "https://unmask.com/",
+   "optOutURL": "https://unmask.com/opt-out/",
+   "steps": "Enter your name, city and state, solve the captchas and confirm by email.",
+   "needsEmail": true
+  },
+  {
+   "id": "usa-official",
+   "name": "USA Official",
+   "priority": 3,
+   "searchURL": "https://usa-official.com/",
+   "optOutURL": "https://usa-official.com/remove.php",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "usa-trace",
+   "name": "USA Trace",
+   "priority": 3,
+   "searchURL": "https://usatrace.com/",
+   "optOutURL": "https://www.peoplefinders.com/opt-out#IT",
+   "steps": "Online form. Uses PeopleFinders data"
+  },
+  {
+   "id": "valid-number",
+   "name": "Valid Number",
+   "priority": 3,
+   "searchURL": "https://validnumber.com/",
+   "optOutURL": "https://validnumber.com/doc/contact/",
+   "steps": "Online contact form. Submit through https://validnumber.com/doc/contact/"
+  },
+  {
+   "id": "valpak-cox",
+   "name": "Valpak/Cox",
+   "priority": 3,
+   "searchURL": "https://valpak.com/",
+   "optOutURL": "https://www.valpak.com/coupons/show/mailinglistsuppression",
+   "steps": "Online form. Direct mail opt-out"
+  },
+  {
+   "id": "vehicle-history",
+   "name": "Vehicle History",
+   "priority": 3,
+   "searchURL": "https://vehiclehistory.com/",
+   "optOutURL": "https://vehiclehistory.com",
+   "steps": "Email. Email support@vehiclehistory.com",
+   "email": "support@vehiclehistory.com"
+  },
+  {
+   "id": "verecor",
+   "name": "Verecor",
+   "priority": 3,
+   "searchURL": "https://verecor.com/",
+   "optOutURL": "https://findrec.com/page/privacy",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "vericora",
+   "name": "Vericora",
+   "priority": 3,
+   "searchURL": "https://vericora.com/",
+   "optOutURL": "https://vericora.com/ng/control/privacy",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "veriforia",
+   "name": "Veriforia",
+   "priority": 3,
+   "searchURL": "https://veriforia.com/",
+   "optOutURL": "https://veriforia.com/ng/control/privacy",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "veripages",
+   "name": "Veripages",
+   "priority": 3,
+   "searchURL": "https://veripages.com/",
+   "optOutURL": "https://veripages.com/inner/control-privacy",
+   "steps": "Copy your profile link, paste it with your name and email, solve the captcha and confirm by email.",
+   "needsEmail": true
+  },
+  {
+   "id": "visa",
+   "name": "Visa",
+   "priority": 3,
+   "searchURL": "https://visa.com/",
+   "optOutURL": "https://marketingreportoptout.visa.com/OPTOUT/request.do",
+   "steps": "Online form. Opt out of Visa marketing data reports"
+  },
+  {
+   "id": "whooster",
+   "name": "Whooster",
+   "priority": 3,
+   "searchURL": "https://whooster.com/",
+   "optOutURL": "https://whooster.com",
+   "steps": "Email. Email privacy@whooster.com",
+   "email": "privacy@whooster.com"
+  },
+  {
+   "id": "whoseno",
+   "name": "Whoseno",
+   "priority": 3,
+   "searchURL": "https://whoseno.com/",
+   "optOutURL": "https://whoseno.com",
+   "steps": "Online contact form. Submit through the contact form with removal details"
+  },
+  {
+   "id": "wyty",
+   "name": "WYTY",
+   "priority": 3,
+   "searchURL": "https://wyty.com/",
+   "optOutURL": "https://www.wyty.com/remove/",
+   "steps": "Online form. Online removal tool"
+  },
+  {
+   "id": "yasni",
+   "name": "Yasni",
+   "priority": 3,
+   "searchURL": "https://yasni.com/",
+   "optOutURL": "https://yasni.com",
+   "steps": "No opt-out. No direct removal. Remove from original sources and Yasni will refresh"
+  },
+  {
+   "id": "yellow-book",
+   "name": "Yellow Book",
+   "priority": 3,
+   "searchURL": "https://yellowbook.com/",
+   "optOutURL": "https://www.beenverified.com/app/optout/search",
+   "steps": "Online form. Owned by BeenVerified"
+  },
+  {
+   "id": "yellow-pages",
+   "name": "Yellow Pages",
+   "priority": 3,
+   "searchURL": "https://yellowpages.com/",
+   "optOutURL": "https://tinyurl.com/dexknowscom",
+   "steps": "Online form. Owned by Thryv. Same removal as DexKnows"
+  },
+  {
+   "id": "zabasearch",
+   "name": "Zabasearch",
+   "priority": 3,
+   "searchURL": "https://zabasearch.com/",
+   "optOutURL": "https://zabasearch.com",
+   "steps": "Fax. Fax to 425-974-6194. Email: response@zabasearch.com",
+   "email": "response@zabasearch.com"
+  },
+  {
+   "id": "zoominfo",
+   "name": "ZoomInfo",
+   "priority": 3,
+   "searchURL": "https://zoominfo.com/",
+   "optOutURL": "https://www.zoominfo.com/about-zoominfo/privacy-manage-profile",
+   "steps": "Online form + Email. Business/professional data. Email: privacy@zoominfo.com",
+   "email": "privacy@zoominfo.com"
+  },
+  {
+   "id": "33mileradius",
+   "name": "33MileRadius",
+   "priority": 4,
+   "searchURL": "https://33mileradius.com/",
+   "optOutURL": "https://33mileradius.com",
+   "steps": "Email privacy@33mileradius.com. Direct mail targeting company",
+   "email": "privacy@33mileradius.com"
+  },
+  {
+   "id": "6sense",
+   "name": "6sense",
+   "priority": 4,
+   "searchURL": "https://6sense.com/",
+   "optOutURL": "https://6sense.com",
+   "steps": "Online form + Email confirm. B2B predictive intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "acbj-american-city-business-journals",
+   "name": "ACBJ (American City Business Journals)",
+   "priority": 4,
+   "searchURL": "https://acbj.com/",
+   "optOutURL": "https://acbj.com",
+   "steps": "Online form. Business news publisher. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "accenture",
+   "name": "Accenture",
+   "priority": 4,
+   "searchURL": "https://accenture.com/",
+   "optOutURL": "https://accenture.com",
+   "steps": "Online form. Consulting firm with data services. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "accudata",
+   "name": "AccuData",
+   "priority": 4,
+   "searchURL": "https://accudata.com/",
+   "optOutURL": "https://accudata.com",
+   "steps": "Online form. Marketing data provider. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "ach-coop",
+   "name": "ACH Coop",
+   "priority": 4,
+   "searchURL": "https://achcoop.com/",
+   "optOutURL": "https://achcoop.com",
+   "steps": "Online form. Financial data cooperative. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "acuant",
+   "name": "Acuant",
+   "priority": 4,
+   "searchURL": "https://acuant.com/",
+   "optOutURL": "https://acuant.com",
+   "steps": "Online form. Identity verification company. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "acxiom",
+   "name": "Acxiom",
+   "priority": 4,
+   "searchURL": null,
+   "optOutURL": "https://www.acxiom.com/optout/",
+   "steps": "Acxiom sells data to marketers rather than showing it publicly. Fill in the US opt-out form once. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "adadapted",
+   "name": "AdAdapted",
+   "priority": 4,
+   "searchURL": "https://adadapted.com/",
+   "optOutURL": "https://adadapted.com",
+   "steps": "Online form. Advertising platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "addirect",
+   "name": "AdDirect",
+   "priority": 4,
+   "searchURL": "https://addirectinc.com/",
+   "optOutURL": "https://addirectinc.com",
+   "steps": "Online form. Direct marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "agr-marketing-solutions",
+   "name": "AGR Marketing Solutions",
+   "priority": 4,
+   "searchURL": "https://agrmarketingsolutions.com/",
+   "optOutURL": "https://agrmarketingsolutions.com",
+   "steps": "Online form. Agricultural marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "alphonso",
+   "name": "Alphonso",
+   "priority": 4,
+   "searchURL": "https://alphonso.tv/",
+   "optOutURL": "https://alphonso.tv",
+   "steps": "Online form. TV data and advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "amplemarket",
+   "name": "Amplemarket",
+   "priority": 4,
+   "searchURL": "https://amplemarket.com/",
+   "optOutURL": "https://amplemarket.com",
+   "steps": "Email privacy@amplemarket.com. Sales engagement platform",
+   "email": "privacy@amplemarket.com"
+  },
+  {
+   "id": "anchor-computer",
+   "name": "Anchor Computer",
+   "priority": 4,
+   "searchURL": "https://anchorcomputer.com/",
+   "optOutURL": "https://anchorcomputer.com",
+   "steps": "Online form or Email. Direct mail data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "andrews-wharton",
+   "name": "Andrews Wharton",
+   "priority": 4,
+   "searchURL": "https://andrewswharton.com/",
+   "optOutURL": "https://andrewswharton.com",
+   "steps": "Online form. Data-driven marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "ap-news",
+   "name": "AP News",
+   "priority": 4,
+   "searchURL": "https://apnews.com/",
+   "optOutURL": "https://apnews.com",
+   "steps": "Online form. News organization. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "apollointeractive",
+   "name": "ApolloInteractive",
+   "priority": 4,
+   "searchURL": "https://apollointeractive.com/",
+   "optOutURL": "https://apollointeractive.com",
+   "steps": "Online form. Digital advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "aristotle",
+   "name": "Aristotle",
+   "priority": 4,
+   "searchURL": "https://aristotle.com/",
+   "optOutURL": "https://aristotle.com",
+   "steps": "Online form. Political data and compliance. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "arity",
+   "name": "Arity",
+   "priority": 4,
+   "searchURL": "https://arity.com/",
+   "optOutURL": "https://arity.com",
+   "steps": "Online form. Driving/mobility data (Allstate subsidiary). Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "atdata",
+   "name": "AtData",
+   "priority": 4,
+   "searchURL": "https://atdata.com/",
+   "optOutURL": "https://atdata.com",
+   "steps": "Online form. Email intelligence platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "attom-data",
+   "name": "ATTOM Data",
+   "priority": 4,
+   "searchURL": "https://attomdata.com/",
+   "optOutURL": "https://attomdata.com",
+   "steps": "Online form. Property and real estate data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "autoweb",
+   "name": "AutoWeb",
+   "priority": 4,
+   "searchURL": "https://autoweb.com/",
+   "optOutURL": "https://autoweb.com",
+   "steps": "Online form. Automotive lead data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "bb-direct",
+   "name": "BB Direct",
+   "priority": 4,
+   "searchURL": "https://bbdirect.com/",
+   "optOutURL": "https://bbdirect.com",
+   "steps": "Online form. Direct marketing lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "bdo",
+   "name": "BDO",
+   "priority": 4,
+   "searchURL": "https://bdo.com/",
+   "optOutURL": "https://bdo.com",
+   "steps": "Online form. Accounting/advisory. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "bigdbm",
+   "name": "BIGDBM",
+   "priority": 4,
+   "searchURL": "https://bigdbm.com/",
+   "optOutURL": "https://bigdbm.com",
+   "steps": "Online form. Consumer and B2B data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "billtrust",
+   "name": "Billtrust",
+   "priority": 4,
+   "searchURL": "https://billtrust.com/",
+   "optOutURL": "https://billtrust.com",
+   "steps": "Online form. B2B payment data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "bizapedia",
+   "name": "Bizapedia",
+   "priority": 4,
+   "searchURL": "https://bizapedia.com/",
+   "optOutURL": "https://bizapedia.com",
+   "steps": "Online form. Business registry data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "blis",
+   "name": "Blis",
+   "priority": 4,
+   "searchURL": "https://blis.com/",
+   "optOutURL": "https://blis.com",
+   "steps": "Online form. Location data platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "blueaction",
+   "name": "BlueAction",
+   "priority": 4,
+   "searchURL": "https://blueaction.com/",
+   "optOutURL": "https://blueaction.com",
+   "steps": "Online form. Marketing data services. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "boardex",
+   "name": "BoardEx",
+   "priority": 4,
+   "searchURL": "https://boardex.com/",
+   "optOutURL": "https://boardex.com",
+   "steps": "Online form + Email confirm. Executive/board member intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "brooks-im",
+   "name": "Brooks IM",
+   "priority": 4,
+   "searchURL": "https://brooksim.com/",
+   "optOutURL": "https://brooksim.com",
+   "steps": "Online form. Insurance marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "businesswatch-network",
+   "name": "BusinessWatch Network",
+   "priority": 4,
+   "searchURL": "https://businesswatchnetwork.com/",
+   "optOutURL": "https://businesswatchnetwork.com",
+   "steps": "Online form. Business intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "buxton-co",
+   "name": "Buxton Co",
+   "priority": 4,
+   "searchURL": "https://buxtonco.com/",
+   "optOutURL": "https://buxtonco.com",
+   "steps": "Online form. Consumer analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "bvd-info-bureau-van-dijk",
+   "name": "BVD Info (Bureau van Dijk)",
+   "priority": 4,
+   "searchURL": "https://bvdinfo.com/",
+   "optOutURL": "https://bvdinfo.com",
+   "steps": "Online form. Company/financial data (Moody's). Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "cadent",
+   "name": "Cadent",
+   "priority": 4,
+   "searchURL": "https://cadent.tv/",
+   "optOutURL": "https://cadent.tv",
+   "steps": "Online form + Email confirm. TV advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "carney-direct",
+   "name": "Carney Direct",
+   "priority": 4,
+   "searchURL": "https://carneydirect.com/",
+   "optOutURL": "https://carneydirect.com",
+   "steps": "Online form. Direct mail marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "catalina",
+   "name": "Catalina",
+   "priority": 4,
+   "searchURL": "https://catalina.com/",
+   "optOutURL": "https://catalina.com",
+   "steps": "Online form. Shopper intelligence/marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "catalist",
+   "name": "Catalist",
+   "priority": 4,
+   "searchURL": "https://catalist.us/",
+   "optOutURL": "https://catalist.us",
+   "steps": "Online form. Political data and analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "catalyzeai",
+   "name": "CatalyzeAI",
+   "priority": 4,
+   "searchURL": "https://catalyze.ai/",
+   "optOutURL": "https://catalyze.ai",
+   "steps": "Online form. AI-driven advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "cision",
+   "name": "Cision",
+   "priority": 4,
+   "searchURL": "https://cision.com/",
+   "optOutURL": "https://cision.com",
+   "steps": "Online form. PR/media intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "civis-analytics",
+   "name": "Civis Analytics",
+   "priority": 4,
+   "searchURL": "https://civisanalytics.com/",
+   "optOutURL": "https://civisanalytics.com",
+   "steps": "Online form. Data science/analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "claritas",
+   "name": "Claritas",
+   "priority": 4,
+   "searchURL": "https://claritas.com/",
+   "optOutURL": "https://claritas.com",
+   "steps": "Online form + Email + ID. Consumer segmentation data. Requires valid state ID or utility bill upload. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "clickagy",
+   "name": "Clickagy",
+   "priority": 4,
+   "searchURL": "https://clickagy.com/",
+   "optOutURL": "https://clickagy.com",
+   "steps": "Online form. Behavioral data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "cognism",
+   "name": "Cognism",
+   "priority": 4,
+   "searchURL": "https://cognism.com/",
+   "optOutURL": "https://cognism.com",
+   "steps": "Online form. B2B contact database. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "compact-lists",
+   "name": "Compact Lists",
+   "priority": 4,
+   "searchURL": "https://compactlists.com/",
+   "optOutURL": "https://compactlists.com",
+   "steps": "Online form. Mailing list provider. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "compile",
+   "name": "Compile",
+   "priority": 4,
+   "searchURL": "https://compile.com/",
+   "optOutURL": "https://compile.com",
+   "steps": "Online form. Business data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "complementics",
+   "name": "Complementics",
+   "priority": 4,
+   "searchURL": "https://complementics.com/",
+   "optOutURL": "https://complementics.com",
+   "steps": "Online form. Advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "complete-medical-lists",
+   "name": "Complete Medical Lists",
+   "priority": 4,
+   "searchURL": "https://completemedicallists.com/",
+   "optOutURL": "https://completemedicallists.com",
+   "steps": "Online form. Healthcare marketing lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "consider",
+   "name": "Consider",
+   "priority": 4,
+   "searchURL": "https://consider.com/",
+   "optOutURL": "https://consider.com",
+   "steps": "Online form. Sales intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "consumers-datax",
+   "name": "Consumers DataX",
+   "priority": 4,
+   "searchURL": "https://dataxltd.com/",
+   "optOutURL": "https://dataxltd.com",
+   "steps": "Online form. Consumer credit data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "contentgine",
+   "name": "Contentgine",
+   "priority": 4,
+   "searchURL": "https://contentgine.com/",
+   "optOutURL": "https://contentgine.com",
+   "steps": "Online form. Content marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "convex",
+   "name": "Convex",
+   "priority": 4,
+   "searchURL": "https://convex.com/",
+   "optOutURL": "https://convex.com",
+   "steps": "Online form. Commercial services data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "cre-moody-s-analytics",
+   "name": "CRE (Moody's Analytics)",
+   "priority": 4,
+   "searchURL": "https://economy.com/",
+   "optOutURL": "https://economy.com",
+   "steps": "Online form. Commercial real estate analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "crosspixel",
+   "name": "CrossPixel",
+   "priority": 4,
+   "searchURL": "https://crosspixel.net/",
+   "optOutURL": "https://crosspixel.net",
+   "steps": "Online form. Audience data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "crosswalk-nyc",
+   "name": "Crosswalk NYC",
+   "priority": 4,
+   "searchURL": "https://crosswalknyc.com/",
+   "optOutURL": "https://crosswalknyc.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "crunchbase",
+   "name": "Crunchbase",
+   "priority": 4,
+   "searchURL": "https://crunchbase.com/",
+   "optOutURL": "https://preferences.crunchbase.com/dont_sell",
+   "steps": "Online form. Business/startup database. Submit at https://preferences.crunchbase.com/dont_sell. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "cuebiq",
+   "name": "Cuebiq",
+   "priority": 4,
+   "searchURL": "https://cuebiq.com/",
+   "optOutURL": "https://cuebiq.com",
+   "steps": "Online form. Location intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "cybba",
+   "name": "Cybba",
+   "priority": 4,
+   "searchURL": "https://cybba.com/",
+   "optOutURL": "https://cybba.com",
+   "steps": "Online form. Digital advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "cyndx",
+   "name": "Cyndx",
+   "priority": 4,
+   "searchURL": "https://cyndx.com/",
+   "optOutURL": "https://cyndx.com",
+   "steps": "Online form. Financial data/deal intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "data-lead",
+   "name": "Data-Lead",
+   "priority": 4,
+   "searchURL": "https://data-lead.com/",
+   "optOutURL": "https://data-lead.com",
+   "steps": "Online form. B2B lead data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "data-management",
+   "name": "Data-Management",
+   "priority": 4,
+   "searchURL": "https://data-management.com/",
+   "optOutURL": "https://data-management.com",
+   "steps": "Online form. Marketing data services. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "datanyze",
+   "name": "Datanyze",
+   "priority": 4,
+   "searchURL": "https://datanyze.com/",
+   "optOutURL": "https://datanyze.com",
+   "steps": "Online form. Technographic data (ZoomInfo subsidiary). Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "datapartners",
+   "name": "DataPartners",
+   "priority": 4,
+   "searchURL": "https://datapartnersinc.com/",
+   "optOutURL": "https://datapartnersinc.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "decide",
+   "name": "Decide",
+   "priority": 4,
+   "searchURL": "https://decide.co/",
+   "optOutURL": "https://decide.co",
+   "steps": "Online form. Sales intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "deloitte",
+   "name": "Deloitte",
+   "priority": 4,
+   "searchURL": "https://deloitte.com/",
+   "optOutURL": "https://deloitte.com",
+   "steps": "Online form. Consulting with data services. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "demandscience",
+   "name": "DemandScience",
+   "priority": 4,
+   "searchURL": "https://demandscience.com/",
+   "optOutURL": "https://demandscience.com",
+   "steps": "Online form. B2B demand generation data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "demyst",
+   "name": "Demyst",
+   "priority": 4,
+   "searchURL": "https://demyst.com/",
+   "optOutURL": "https://demyst.com",
+   "steps": "Online form. External data platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "diablo-media",
+   "name": "Diablo Media",
+   "priority": 4,
+   "searchURL": "https://diablomedia.com/",
+   "optOutURL": "https://diablomedia.com",
+   "steps": "Online form. Performance marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "digitalsegment",
+   "name": "DigitalSegment",
+   "priority": 4,
+   "searchURL": "https://digitalsegment.com/",
+   "optOutURL": "https://digitalsegment.com",
+   "steps": "Online form. Audience data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "diligent",
+   "name": "Diligent",
+   "priority": 4,
+   "searchURL": "https://diligent.com/",
+   "optOutURL": "https://diligent.com",
+   "steps": "Online form. Governance/board data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "disconetwork",
+   "name": "DiscoNetwork",
+   "priority": 4,
+   "searchURL": "https://disconetwork.com/",
+   "optOutURL": "https://disconetwork.com",
+   "steps": "Online form. Advertising network. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "disqus",
+   "name": "Disqus",
+   "priority": 4,
+   "searchURL": "https://disqus.com/",
+   "optOutURL": "https://disqus.com",
+   "steps": "Online form + Email confirm. Comment platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "dm-databases",
+   "name": "DM Databases",
+   "priority": 4,
+   "searchURL": "https://dmdatabases.com/",
+   "optOutURL": "https://dmdatabases.com",
+   "steps": "Online form. Direct mail data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "dnb-utility-dun-bradstreet",
+   "name": "DNB Utility (Dun & Bradstreet)",
+   "priority": 4,
+   "searchURL": "https://dnb.com/",
+   "optOutURL": "https://dnb.com",
+   "steps": "Online form. Business data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "driveniq",
+   "name": "DrivenIQ",
+   "priority": 4,
+   "searchURL": "https://driveniq.com/",
+   "optOutURL": "https://driveniq.com",
+   "steps": "Online form. Data-driven advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "dstillery",
+   "name": "Dstillery",
+   "priority": 4,
+   "searchURL": "https://dstillery.com/",
+   "optOutURL": "https://dstillery.com",
+   "steps": "Online form. Audience data for advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "dtn",
+   "name": "DTN",
+   "priority": 4,
+   "searchURL": "https://dtn.com/",
+   "optOutURL": "https://dtn.com",
+   "steps": "Online form. Weather/agriculture/energy data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "edvisors",
+   "name": "Edvisors",
+   "priority": 4,
+   "searchURL": "https://edvisors.com/",
+   "optOutURL": "https://edvisors.com",
+   "steps": "Online form. Student data/financial aid. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "ekata-mastercard",
+   "name": "Ekata (Mastercard)",
+   "priority": 4,
+   "searchURL": "https://ekata.com/",
+   "optOutURL": "https://ekata.com",
+   "steps": "Online form + Email verify code. Identity verification. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "enigma",
+   "name": "Enigma",
+   "priority": 4,
+   "searchURL": "https://enigma.com/",
+   "optOutURL": "https://enigma.com",
+   "steps": "Online form. Business identity data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "equifax",
+   "name": "Equifax",
+   "priority": 4,
+   "searchURL": "https://equifax.com/",
+   "optOutURL": "https://myprivacy.equifax.com/opt-in-opt-out/personal-info",
+   "steps": "Online form. HIGH PRIORITY. Major credit bureau. Go to https://myprivacy.equifax.com/opt-in-opt-out/personal-info. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "experian-health",
+   "name": "Experian Health",
+   "priority": 4,
+   "searchURL": "https://experian.com/",
+   "optOutURL": "https://experian.com",
+   "steps": "Email. Healthcare credit data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "eyeota",
+   "name": "Eyeota",
+   "priority": 4,
+   "searchURL": "https://eyeota.com/",
+   "optOutURL": "https://eyeota.com",
+   "steps": "Online form. Audience data marketplace. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "famousbirthdays",
+   "name": "FamousBirthdays",
+   "priority": 4,
+   "searchURL": "https://famousbirthdays.com/",
+   "optOutURL": "https://famousbirthdays.com",
+   "steps": "Online form. Celebrity/public figure database. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "fifty",
+   "name": "Fifty",
+   "priority": 4,
+   "searchURL": "https://fifty.io/",
+   "optOutURL": "https://fifty.io",
+   "steps": "Online form. Audience intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "first-direct-marketing",
+   "name": "First Direct Marketing",
+   "priority": 4,
+   "searchURL": "https://firstdirectcorp.com/",
+   "optOutURL": "https://firstdirectcorp.com",
+   "steps": "Online form. Direct mail marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "forewarn",
+   "name": "FOREWARN",
+   "priority": 4,
+   "searchURL": "https://forewarn.com/",
+   "optOutURL": "https://forewarn.com",
+   "steps": "Online form. Real estate identity verification. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "fourleafdata",
+   "name": "FourLeafData",
+   "priority": 4,
+   "searchURL": "https://fourleafdata.com/",
+   "optOutURL": "https://fourleafdata.com",
+   "steps": "Online form. Consumer marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "fraiser",
+   "name": "Fraiser",
+   "priority": 4,
+   "searchURL": "https://fraiser.com/",
+   "optOutURL": "https://fraiser.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "gale-cengage",
+   "name": "Gale (Cengage)",
+   "priority": 4,
+   "searchURL": "https://gale.com/",
+   "optOutURL": "https://gale.com",
+   "steps": "Online form. Library/research databases. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "getemails",
+   "name": "GetEmails",
+   "priority": 4,
+   "searchURL": "https://getemails.com/",
+   "optOutURL": "https://getemails.com",
+   "steps": "Online form. Email identification platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "giant-partners",
+   "name": "Giant Partners",
+   "priority": 4,
+   "searchURL": "https://giantpartners.com/",
+   "optOutURL": "https://giantpartners.com",
+   "steps": "Online form. Marketing data lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "grassroots-analytics",
+   "name": "Grassroots Analytics",
+   "priority": 4,
+   "searchURL": "https://grassrootsanalytics.com/",
+   "optOutURL": "https://grassrootsanalytics.com",
+   "steps": "Online form. Political data analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "grata",
+   "name": "Grata",
+   "priority": 4,
+   "searchURL": "https://grata.com/",
+   "optOutURL": "https://grata.com",
+   "steps": "Online form. Private company intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "gravy-analytics",
+   "name": "Gravy Analytics",
+   "priority": 4,
+   "searchURL": "https://gravyanalytics.com/",
+   "optOutURL": "https://gravyanalytics.com",
+   "steps": "Online form. Location data analytics. Note: If you reset your device advertising ID, you must re-submit opt-out. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "grayhair-software",
+   "name": "GrayHair Software",
+   "priority": 4,
+   "searchURL": "https://grayhairsoftware.com/",
+   "optOutURL": "https://grayhairsoftware.com",
+   "steps": "Online form. Direct mail data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "growbots",
+   "name": "Growbots",
+   "priority": 4,
+   "searchURL": "https://growbots.com/",
+   "optOutURL": "https://growbots.com",
+   "steps": "Online form. Outbound sales data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "harmon-research",
+   "name": "Harmon Research",
+   "priority": 4,
+   "searchURL": "https://harmonresearch.com/",
+   "optOutURL": "https://harmonresearch.com",
+   "steps": "Online form. Consumer data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "healthwise-data",
+   "name": "HealthWise Data",
+   "priority": 4,
+   "searchURL": "https://healthwisedata.com/",
+   "optOutURL": "https://healthwisedata.com",
+   "steps": "Online form. Healthcare marketing lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "heartbeat",
+   "name": "Heartbeat",
+   "priority": 4,
+   "searchURL": "https://heartbeat.com/",
+   "optOutURL": "https://heartbeat.com",
+   "steps": "Online form. Influencer marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "hunter",
+   "name": "Hunter",
+   "priority": 4,
+   "searchURL": "https://hunter.io/",
+   "optOutURL": "https://hunter.io",
+   "steps": "Online form + Email confirm. Email finder tool. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "hybridtheory",
+   "name": "HybridTheory",
+   "priority": 4,
+   "searchURL": "https://hybridtheory.com/",
+   "optOutURL": "https://hybridtheory.com",
+   "steps": "Online form. Contextual advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "id-analytics",
+   "name": "ID Analytics",
+   "priority": 4,
+   "searchURL": "https://idanalytics.com/",
+   "optOutURL": "https://idanalytics.com",
+   "steps": "Online form. Identity risk analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "idi-data",
+   "name": "IDI Data",
+   "priority": 4,
+   "searchURL": "https://ididata.com/",
+   "optOutURL": "https://ididata.com",
+   "steps": "Online form. People search/investigation data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "idology",
+   "name": "IDology",
+   "priority": 4,
+   "searchURL": "https://idology.com/",
+   "optOutURL": "https://idology.com",
+   "steps": "Online form. Identity verification. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "infofree",
+   "name": "Infofree",
+   "priority": 4,
+   "searchURL": "https://infofree.com/",
+   "optOutURL": "https://infofree.com",
+   "steps": "Online form + Email confirm. Business and consumer data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "informa-divisions",
+   "name": "Informa Divisions",
+   "priority": 4,
+   "searchURL": "https://informa.com/",
+   "optOutURL": "https://informa.com",
+   "steps": "Online form. Business intelligence/events data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "intalytics",
+   "name": "Intalytics",
+   "priority": 4,
+   "searchURL": "https://intalytics.com/",
+   "optOutURL": "https://intalytics.com",
+   "steps": "Online form. Location analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "intentiq",
+   "name": "IntentIQ",
+   "priority": 4,
+   "searchURL": "https://intentiq.com/",
+   "optOutURL": "https://intentiq.com",
+   "steps": "Online form. Identity resolution for advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "intentmacro",
+   "name": "IntentMacro",
+   "priority": 4,
+   "searchURL": "https://intentmacro.com/",
+   "optOutURL": "https://intentmacro.com",
+   "steps": "Online form. Intent data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "internet-brands",
+   "name": "Internet Brands",
+   "priority": 4,
+   "searchURL": "https://internetbrands.com/",
+   "optOutURL": "https://internetbrands.com",
+   "steps": "Online form. Web media company. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "interseller",
+   "name": "Interseller",
+   "priority": 4,
+   "searchURL": "https://interseller.io/",
+   "optOutURL": "https://interseller.io",
+   "steps": "Online form. Sales prospecting tool. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "intranetquorum",
+   "name": "IntranetQuorum",
+   "priority": 4,
+   "searchURL": "https://quorum.us/",
+   "optOutURL": "https://quorum.us",
+   "steps": "Online form. Political/government data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "ip2location",
+   "name": "IP2Location",
+   "priority": 4,
+   "searchURL": "https://ip2location.com/",
+   "optOutURL": "https://ip2location.com",
+   "steps": "Online form. IP geolocation data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "ispot",
+   "name": "iSpot",
+   "priority": 4,
+   "searchURL": "https://ispot.tv/",
+   "optOutURL": "https://ispot.tv",
+   "steps": "Online form. TV ad measurement. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "iss-governance",
+   "name": "ISS Governance",
+   "priority": 4,
+   "searchURL": "https://issgovernance.com/",
+   "optOutURL": "https://issgovernance.com",
+   "steps": "Online form. ESG/governance data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "j-d-power",
+   "name": "J.D. Power",
+   "priority": 4,
+   "searchURL": "https://jdpower.com/",
+   "optOutURL": "https://jdpower.com",
+   "steps": "Online form. Consumer data/ratings. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "jdm-list-services",
+   "name": "JDM List Services",
+   "priority": 4,
+   "searchURL": "https://jdmlistservices.com/",
+   "optOutURL": "https://jdmlistservices.com",
+   "steps": "Online form. Mailing list broker. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "join5x5",
+   "name": "Join5x5",
+   "priority": 4,
+   "searchURL": "https://join5x5.com/",
+   "optOutURL": "https://join5x5.com",
+   "steps": "Online form. Advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "jungroup",
+   "name": "JunGroup",
+   "priority": 4,
+   "searchURL": "https://jungroup.com/",
+   "optOutURL": "https://jungroup.com",
+   "steps": "Online form. Mobile advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "kb-synergy",
+   "name": "KB Synergy",
+   "priority": 4,
+   "searchURL": "https://kbsynergy.com/",
+   "optOutURL": "https://kbsynergy.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "key-marketing-advantage",
+   "name": "Key Marketing Advantage",
+   "priority": 4,
+   "searchURL": "https://keymarketingadvantage.com/",
+   "optOutURL": "https://keymarketingadvantage.com",
+   "steps": "Online form. Direct marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "key-opinion-leaders",
+   "name": "Key Opinion Leaders",
+   "priority": 4,
+   "searchURL": "https://keyopinionleaders.com/",
+   "optOutURL": "https://keyopinionleaders.com",
+   "steps": "Online form. Healthcare professional data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "keywordconnects",
+   "name": "KeywordConnects",
+   "priority": 4,
+   "searchURL": "https://keywordconnects.com/",
+   "optOutURL": "https://keywordconnects.com",
+   "steps": "Online form. Lead generation. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "koddi",
+   "name": "Koddi",
+   "priority": 4,
+   "searchURL": null,
+   "optOutURL": "https://koddi.com/privacy-policy/",
+   "steps": "An advertising-data company. Send an email deletion request to its registered privacy address.",
+   "email": "dataprivacy@koddi.com"
+  },
+  {
+   "id": "l2-political",
+   "name": "L2 Political",
+   "priority": 4,
+   "searchURL": "https://l2political.com/",
+   "optOutURL": "https://l2political.com",
+   "steps": "Online form. Voter/political data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "leadershipconnect",
+   "name": "LeadershipConnect",
+   "priority": 4,
+   "searchURL": "https://leadershipconnect.io/",
+   "optOutURL": "https://leadershipconnect.io",
+   "steps": "Online form. Government/business contacts. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "leadiq",
+   "name": "LeadIQ",
+   "priority": 4,
+   "searchURL": "https://leadiq.com/",
+   "optOutURL": "https://leadiq.com",
+   "steps": "Online form. B2B prospecting tool. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "leadloft",
+   "name": "LeadLoft",
+   "priority": 4,
+   "searchURL": "https://leadloft.com/",
+   "optOutURL": "https://leadloft.com",
+   "steps": "Online form. Sales prospecting. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "leadme-media",
+   "name": "LeadMe Media",
+   "priority": 4,
+   "searchURL": "https://leadmemedia.com/",
+   "optOutURL": "https://leadmemedia.com",
+   "steps": "Online form. Lead generation. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "leadpost",
+   "name": "LeadPost",
+   "priority": 4,
+   "searchURL": "https://leadpost.com/",
+   "optOutURL": "https://leadpost.com",
+   "steps": "Online form. Website visitor identification. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "leadsmarket",
+   "name": "LeadsMarket",
+   "priority": 4,
+   "searchURL": "https://leadsmarket.com/",
+   "optOutURL": "https://leadsmarket.com",
+   "steps": "Online form. Lead marketplace. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "lifesight",
+   "name": "Lifesight",
+   "priority": 4,
+   "searchURL": "https://lifesight.io/",
+   "optOutURL": "https://lifesight.io",
+   "steps": "Online form. Marketing intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "lightcast",
+   "name": "Lightcast",
+   "priority": 4,
+   "searchURL": "https://lightcast.io/",
+   "optOutURL": "https://lightcast.io",
+   "steps": "Online form. Labor market/workforce data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "list-service-direct",
+   "name": "List Service Direct",
+   "priority": 4,
+   "searchURL": "https://listservicedirect.com/",
+   "optOutURL": "https://listservicedirect.com",
+   "steps": "Online form. Mailing list broker. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "listkit",
+   "name": "ListKit",
+   "priority": 4,
+   "searchURL": null,
+   "optOutURL": "https://www.listkit.io/privacy",
+   "steps": "A sales-lead database. Send an email deletion request; ListKit's privacy policy names this address for opt-outs.",
+   "email": "hello@listkit.io"
+  },
+  {
+   "id": "listmatch",
+   "name": "ListMatch",
+   "priority": 4,
+   "searchURL": "https://listmatch.com/",
+   "optOutURL": "https://listmatch.com",
+   "steps": "Online form. Marketing list matching. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "listsonline",
+   "name": "ListsOnline",
+   "priority": 4,
+   "searchURL": "https://listsonline.com/",
+   "optOutURL": "https://listsonline.com",
+   "steps": "Online form. Mailing list data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "liveintent",
+   "name": "LiveIntent",
+   "priority": 4,
+   "searchURL": "https://liveintent.com/",
+   "optOutURL": "https://liveintent.com",
+   "steps": "Online form. Email-based advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "locatesmarter",
+   "name": "LocateSmarter",
+   "priority": 4,
+   "searchURL": "https://locatesmarter.com/",
+   "optOutURL": "https://locatesmarter.com",
+   "steps": "Online form. Consumer data for collections. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "lotame",
+   "name": "Lotame",
+   "priority": 4,
+   "searchURL": "https://lotame.com/",
+   "optOutURL": "https://lotame.com",
+   "steps": "Online form. Data management platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "lseg",
+   "name": "LSEG / Refinitiv (World-Check)",
+   "priority": 4,
+   "searchURL": null,
+   "optOutURL": "https://www.lseg.com/en/risk-intelligence/screening-solutions/world-check-kyc-screening/about/am-i-listed-on-world-check",
+   "steps": "A financial-screening database. Use the 'Am I on World-Check?' form to find out, or email a removal request. They verify identity by email first.",
+   "email": "contact@world-check.com"
+  },
+  {
+   "id": "luc",
+   "name": "Luc",
+   "priority": 4,
+   "searchURL": "https://luc.id/",
+   "optOutURL": "https://luc.id",
+   "steps": "Online form. Research/survey data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "lusha",
+   "name": "Lusha",
+   "priority": 4,
+   "searchURL": "https://lusha.com/",
+   "optOutURL": "https://lusha.com",
+   "steps": "Online form + Email confirm. B2B contact database (100M+ profiles). Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "machintel",
+   "name": "Machintel",
+   "priority": 4,
+   "searchURL": "https://machintel.com/",
+   "optOutURL": "https://machintel.com",
+   "steps": "Online form. B2B intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "madison-logic",
+   "name": "Madison Logic",
+   "priority": 4,
+   "searchURL": "https://madisonlogic.com/",
+   "optOutURL": "https://madisonlogic.com",
+   "steps": "Online form. ABM data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "magnite",
+   "name": "Magnite",
+   "priority": 4,
+   "searchURL": "https://magnite.com/",
+   "optOutURL": "https://magnite.com",
+   "steps": "Online form. Programmatic advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "malvern-media",
+   "name": "Malvern Media",
+   "priority": 4,
+   "searchURL": "https://malvernmedia.com/",
+   "optOutURL": "https://malvernmedia.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "marinus-analytics",
+   "name": "Marinus Analytics",
+   "priority": 4,
+   "searchURL": "https://marinusanalytics.com/",
+   "optOutURL": "https://marinusanalytics.com",
+   "steps": "Online form. AI-powered analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "marketforce-corp",
+   "name": "MarketForce Corp",
+   "priority": 4,
+   "searchURL": "https://marketforcecorp.com/",
+   "optOutURL": "https://marketforcecorp.com",
+   "steps": "Online form. Customer experience data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "maxmind",
+   "name": "MaxMind",
+   "priority": 4,
+   "searchURL": "https://maxmind.com/",
+   "optOutURL": "https://maxmind.com",
+   "steps": "Online form. IP geolocation and fraud detection. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mediaocean",
+   "name": "Mediaocean",
+   "priority": 4,
+   "searchURL": "https://mediaocean.com/",
+   "optOutURL": "https://mediaocean.com",
+   "steps": "Online form. Advertising workflow. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mediasoft-studio",
+   "name": "MediaSoft Studio",
+   "priority": 4,
+   "searchURL": "https://mediasoftstudio.com/",
+   "optOutURL": "https://mediasoftstudio.com",
+   "steps": "Online form. Digital media. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mediawallah",
+   "name": "MediaWallah",
+   "priority": 4,
+   "searchURL": "https://mediawallah.com/",
+   "optOutURL": "https://mediawallah.com",
+   "steps": "Online form. Identity resolution. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "meltwater",
+   "name": "Meltwater",
+   "priority": 4,
+   "searchURL": "https://meltwater.com/",
+   "optOutURL": "https://meltwater.com",
+   "steps": "Online form. Media intelligence/PR data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "merkle-dentsu",
+   "name": "Merkle (Dentsu)",
+   "priority": 4,
+   "searchURL": "https://merkleinc.com/",
+   "optOutURL": "https://merkleinc.com",
+   "steps": "Online form + Email confirm. Performance marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mightrep",
+   "name": "MightRep",
+   "priority": 4,
+   "searchURL": "https://mightrep.com/",
+   "optOutURL": "https://mightrep.com",
+   "steps": "Online form. Sales data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "milestone-marketing",
+   "name": "Milestone Marketing",
+   "priority": 4,
+   "searchURL": "https://milestonemarketingsolutions.com/",
+   "optOutURL": "https://milestonemarketingsolutions.com",
+   "steps": "Online form. Direct marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mlxp",
+   "name": "MLXP",
+   "priority": 4,
+   "searchURL": "https://mlxp.com/",
+   "optOutURL": "https://mlxp.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mobilewalla",
+   "name": "Mobilewalla",
+   "priority": 4,
+   "searchURL": "https://mobilewalla.com/",
+   "optOutURL": "https://mobilewalla.com",
+   "steps": "Online form. Mobile/location consumer data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "modigie",
+   "name": "Modigie",
+   "priority": 4,
+   "searchURL": "https://modigie.com/",
+   "optOutURL": "https://modigie.com",
+   "steps": "Online form. Advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mogean",
+   "name": "Mogean",
+   "priority": 4,
+   "searchURL": "https://mogean.com/",
+   "optOutURL": "https://mogean.com",
+   "steps": "Online form. Marketing platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "monevo",
+   "name": "Monevo",
+   "priority": 4,
+   "searchURL": "https://monevo.com/",
+   "optOutURL": "https://monevo.com",
+   "steps": "Online form. Credit/financial lead data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "monocl",
+   "name": "Monocl",
+   "priority": 4,
+   "searchURL": "https://monocl.com/",
+   "optOutURL": "https://monocl.com",
+   "steps": "Online form. Healthcare expert data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "mrg-inc",
+   "name": "MRG Inc",
+   "priority": 4,
+   "searchURL": "https://mrginc.com/",
+   "optOutURL": "https://mrginc.com",
+   "steps": "Online form. Direct mail data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "multimedia-lists",
+   "name": "Multimedia Lists",
+   "priority": 4,
+   "searchURL": "https://multimedialists.com/",
+   "optOutURL": "https://multimedialists.com",
+   "steps": "Online form. Mailing list provider. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "myflashcloud",
+   "name": "MyFlashCloud",
+   "priority": 4,
+   "searchURL": "https://myflashcloud.com/",
+   "optOutURL": "https://myflashcloud.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "nativo",
+   "name": "Nativo",
+   "priority": 4,
+   "searchURL": "https://nativo.com/",
+   "optOutURL": "https://nativo.com",
+   "steps": "Online form + Email confirm. Native advertising platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "ncaa",
+   "name": "NCAA",
+   "priority": 4,
+   "searchURL": "https://ncaa.org/",
+   "optOutURL": "https://ncaa.org",
+   "steps": "Online form. Student-athlete data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "netwise-data",
+   "name": "NetWise Data",
+   "priority": 4,
+   "searchURL": "https://netwisedata.com/",
+   "optOutURL": "https://netwisedata.com",
+   "steps": "Online form. B2B data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "nextroll",
+   "name": "NextRoll",
+   "priority": 4,
+   "searchURL": "https://nextroll.com/",
+   "optOutURL": "https://nextroll.com",
+   "steps": "Online form. AdRoll/RollWorks parent. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "nextwave-marketing",
+   "name": "NextWave Marketing",
+   "priority": 4,
+   "searchURL": "https://nextwavemarketingstrategies.com/",
+   "optOutURL": "https://nextwavemarketingstrategies.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "nexxa-group",
+   "name": "Nexxa Group",
+   "priority": 4,
+   "searchURL": "https://nexxagroup.com/",
+   "optOutURL": "https://nexxagroup.com",
+   "steps": "Online form. Marketing services. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "nexxen",
+   "name": "Nexxen",
+   "priority": 4,
+   "searchURL": "https://nexxen.com/",
+   "optOutURL": "https://nexxen.com",
+   "steps": "Online form. Connected TV advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "oan",
+   "name": "OAN",
+   "priority": 4,
+   "searchURL": "https://oan.com/",
+   "optOutURL": "https://oan.com",
+   "steps": "Online form. Data services. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "onemata",
+   "name": "Onemata",
+   "priority": 4,
+   "searchURL": "https://onemata.com/",
+   "optOutURL": "https://onemata.com",
+   "steps": "Online form. Location data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "onspot-data",
+   "name": "OnSpot Data",
+   "priority": 4,
+   "searchURL": "https://onspotdata.com/",
+   "optOutURL": "https://onspotdata.com",
+   "steps": "Online form. Geolocation data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "openpeoplesearch",
+   "name": "OpenPeopleSearch",
+   "priority": 4,
+   "searchURL": "https://openpeoplesearch.com/",
+   "optOutURL": "https://openpeoplesearch.com",
+   "steps": "Online form. People search API. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "openx",
+   "name": "OpenX",
+   "priority": 4,
+   "searchURL": "https://openx.com/",
+   "optOutURL": "https://openx.com",
+   "steps": "Online form. Programmatic advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "optimal-fusion",
+   "name": "Optimal Fusion",
+   "priority": 4,
+   "searchURL": "https://optimalfusion.com/",
+   "optOutURL": "https://optimalfusion.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "pacific-east",
+   "name": "Pacific East",
+   "priority": 4,
+   "searchURL": "https://pacificeast.com/",
+   "optOutURL": "https://pacificeast.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "parade",
+   "name": "Parade",
+   "priority": 4,
+   "searchURL": "https://parade.ai/",
+   "optOutURL": "https://parade.ai",
+   "steps": "Online form. Recruiting/HR data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "path2response",
+   "name": "Path2Response",
+   "priority": 4,
+   "searchURL": "https://path2response.com/",
+   "optOutURL": "https://path2response.com",
+   "steps": "Online form. Direct mail analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "permutive",
+   "name": "Permutive",
+   "priority": 4,
+   "searchURL": "https://permutive.com/",
+   "optOutURL": "https://permutive.com",
+   "steps": "Online form. Publisher data platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "pickmedicare",
+   "name": "PickMedicare",
+   "priority": 4,
+   "searchURL": "https://pickmedicare.com/",
+   "optOutURL": "https://pickmedicare.com",
+   "steps": "Online form. Medicare lead data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "popacta",
+   "name": "PopActa",
+   "priority": 4,
+   "searchURL": "https://popacta.com/",
+   "optOutURL": "https://popacta.com",
+   "steps": "Online form. Advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "postie",
+   "name": "Postie",
+   "priority": 4,
+   "searchURL": "https://postie.com/",
+   "optOutURL": "https://postie.com",
+   "steps": "Online form. Programmatic direct mail. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "preferred-communications",
+   "name": "Preferred Communications",
+   "priority": 4,
+   "searchURL": "https://preferredcom.com/",
+   "optOutURL": "https://preferredcom.com",
+   "steps": "Online form. Direct marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "privco",
+   "name": "PrivCo",
+   "priority": 4,
+   "searchURL": "https://privco.com/",
+   "optOutURL": "https://privco.com",
+   "steps": "Online form. Private company financial data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "pubmatic",
+   "name": "PubMatic",
+   "priority": 4,
+   "searchURL": "https://pubmatic.com/",
+   "optOutURL": "https://pubmatic.com",
+   "steps": "Online form. Programmatic advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "pulsepoint",
+   "name": "PulsePoint",
+   "priority": 4,
+   "searchURL": "https://pulsepoint.com/",
+   "optOutURL": "https://pulsepoint.com",
+   "steps": "Online form. Health/programmatic advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "pwc-us",
+   "name": "PwC US",
+   "priority": 4,
+   "searchURL": "https://pwc.com/",
+   "optOutURL": "https://pwc.com",
+   "steps": "Online form. Consulting with data services. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "quad",
+   "name": "Quad",
+   "priority": 4,
+   "searchURL": "https://quad.com/",
+   "optOutURL": "https://quad.com",
+   "steps": "Online form. Marketing services/printing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "qualfon",
+   "name": "Qualfon",
+   "priority": 4,
+   "searchURL": "https://qualfon.com/",
+   "optOutURL": "https://qualfon.com",
+   "steps": "Email. Business process outsourcing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "raycdp",
+   "name": "RayCDP",
+   "priority": 4,
+   "searchURL": "https://raycdp.com/",
+   "optOutURL": "https://raycdp.com",
+   "steps": "Online form. Customer data platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "reach-marketing",
+   "name": "Reach Marketing",
+   "priority": 4,
+   "searchURL": "https://reachmarketing.com/",
+   "optOutURL": "https://reachmarketing.com",
+   "steps": "Online form. B2B marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "recruitbot",
+   "name": "RecruitBot",
+   "priority": 4,
+   "searchURL": "https://recruitbot.com/",
+   "optOutURL": "https://recruitbot.com",
+   "steps": "Online form. Recruiting data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "redidata",
+   "name": "RediData",
+   "priority": 4,
+   "searchURL": "https://redidata.com/",
+   "optOutURL": "https://redidata.com",
+   "steps": "Online form. Consumer data lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "reklaim",
+   "name": "Reklaim",
+   "priority": 4,
+   "searchURL": "https://reklaimyours.com/",
+   "optOutURL": "https://reklaimyours.com",
+   "steps": "Online form. Data ownership platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "relsci",
+   "name": "RelSci",
+   "priority": 4,
+   "searchURL": "https://relsci.com/",
+   "optOutURL": "https://relsci.com",
+   "steps": "Online form. Relationship intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "reonomy",
+   "name": "Reonomy",
+   "priority": 4,
+   "searchURL": "https://reonomy.com/",
+   "optOutURL": "https://reonomy.com",
+   "steps": "Online form + phone code + Email. Commercial real estate data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "research-usa-llc",
+   "name": "Research USA LLC",
+   "priority": 4,
+   "searchURL": "https://researchusallc.com/",
+   "optOutURL": "https://researchusallc.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "resonate",
+   "name": "Resonate",
+   "priority": 4,
+   "searchURL": "https://resonate.com/",
+   "optOutURL": "https://resonate.com",
+   "steps": "Online (one-click). Consumer intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "response-solutions-llc",
+   "name": "Response Solutions LLC",
+   "priority": 4,
+   "searchURL": "https://responsesolutionsllc.com/",
+   "optOutURL": "https://responsesolutionsllc.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "revealmobile",
+   "name": "RevealMobile",
+   "priority": 4,
+   "searchURL": "https://revealmobile.com/",
+   "optOutURL": "https://revealmobile.com",
+   "steps": "Online form. Location-based audiences. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "richmedia-llc",
+   "name": "RichMedia LLC",
+   "priority": 4,
+   "searchURL": "https://richmediallc.com/",
+   "optOutURL": "https://richmediallc.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "rrd-r-r-donnelley",
+   "name": "RRD (R.R. Donnelley)",
+   "priority": 4,
+   "searchURL": "https://rrd.com/",
+   "optOutURL": "https://rrd.com",
+   "steps": "Online form. Marketing/printing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "s-p-global",
+   "name": "S&P Global",
+   "priority": 4,
+   "searchURL": "https://spglobal.com/",
+   "optOutURL": "https://spglobal.com",
+   "steps": "Online form. Financial data and analytics. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "salutary-data",
+   "name": "Salutary Data",
+   "priority": 4,
+   "searchURL": "https://salutarydata.com/",
+   "optOutURL": "https://salutarydata.com",
+   "steps": "Online form. Consumer data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "sbfe",
+   "name": "SBFE",
+   "priority": 4,
+   "searchURL": "https://sbfe.org/",
+   "optOutURL": "https://sbfe.org",
+   "steps": "Online form. Small business financial data exchange. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "scileads",
+   "name": "SciLeads",
+   "priority": 4,
+   "searchURL": "https://scileads.com/",
+   "optOutURL": "https://scileads.com",
+   "steps": "Online form. Scientific B2B data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "scrapingrobot",
+   "name": "ScrapingRobot",
+   "priority": 4,
+   "searchURL": "https://scrapingrobot.com/",
+   "optOutURL": "https://scrapingrobot.com",
+   "steps": "Online form. Web scraping service. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "seamless-ai",
+   "name": "Seamless AI",
+   "priority": 4,
+   "searchURL": "https://seamless.ai/",
+   "optOutURL": "https://seamless.ai",
+   "steps": "Online form + Email confirm. Real-time sales lead data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "sharelocal-media",
+   "name": "ShareLocal Media",
+   "priority": 4,
+   "searchURL": "https://sharelocalmedia.com/",
+   "optOutURL": "https://sharelocalmedia.com",
+   "steps": "Online form. Local advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "sharethrough",
+   "name": "Sharethrough",
+   "priority": 4,
+   "searchURL": "https://sharethrough.com/",
+   "optOutURL": "https://sharethrough.com",
+   "steps": "Online (DAA opt-out). Native advertising. Redirects to DAA opt-out. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "simiocloud",
+   "name": "SimioCloud",
+   "priority": 4,
+   "searchURL": "https://simiocloud.com/",
+   "optOutURL": "https://simiocloud.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "slashdot-media",
+   "name": "Slashdot Media",
+   "priority": 4,
+   "searchURL": "https://slashdotmedia.com/",
+   "optOutURL": "https://slashdotmedia.com",
+   "steps": "Online form. Tech media/advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "snov",
+   "name": "Snov",
+   "priority": 4,
+   "searchURL": "https://snov.io/",
+   "optOutURL": "https://snov.io",
+   "steps": "Online form. Email finder and sales tool. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "socialgist",
+   "name": "Socialgist",
+   "priority": 4,
+   "searchURL": "https://socialgist.com/",
+   "optOutURL": "https://socialgist.com",
+   "steps": "Online form. Social media data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "sourceit-marketing",
+   "name": "SourceIt Marketing",
+   "priority": 4,
+   "searchURL": "https://sourceitmarketing.com/",
+   "optOutURL": "https://sourceitmarketing.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "sovrn",
+   "name": "Sovrn",
+   "priority": 4,
+   "searchURL": "https://sovrn.com/",
+   "optOutURL": "https://sovrn.com",
+   "steps": "Online form. Publisher monetization. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "statara",
+   "name": "Statara",
+   "priority": 4,
+   "searchURL": "https://statara.com/",
+   "optOutURL": "https://statara.com",
+   "steps": "Online form. Political data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "statlistics",
+   "name": "Statlistics",
+   "priority": 4,
+   "searchURL": "https://statlistics.com/",
+   "optOutURL": "https://statlistics.com",
+   "steps": "Online form. Consumer data lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "step2success-marketing",
+   "name": "Step2Success Marketing",
+   "priority": 4,
+   "searchURL": "https://step2successmarketing.com/",
+   "optOutURL": "https://step2successmarketing.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "steppingblocks",
+   "name": "Steppingblocks",
+   "priority": 4,
+   "searchURL": "https://steppingblocks.com/",
+   "optOutURL": "https://steppingblocks.com",
+   "steps": "Online form. Career outcome data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "sterling-strategies",
+   "name": "Sterling Strategies",
+   "priority": 4,
+   "searchURL": "https://sterlingstrategies.com/",
+   "optOutURL": "https://sterlingstrategies.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "swordfish",
+   "name": "Swordfish",
+   "priority": 4,
+   "searchURL": "https://swordfish.ai/",
+   "optOutURL": "https://swordfish.ai",
+   "steps": "Online form. Contact finder. Processes immediately. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "t-mobile-marketing-solutions",
+   "name": "T-Mobile Marketing Solutions",
+   "priority": 4,
+   "searchURL": "https://t-mobile.com/",
+   "optOutURL": "https://t-mobile.com",
+   "steps": "Online form. Telecom advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "taboola",
+   "name": "Taboola",
+   "priority": 4,
+   "searchURL": "https://taboola.com/",
+   "optOutURL": "https://taboola.com",
+   "steps": "Online form. Content recommendation/advertising. Must repeat per device/browser. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "tapad",
+   "name": "Tapad",
+   "priority": 4,
+   "searchURL": "https://tapad.com/",
+   "optOutURL": "https://tapad.com",
+   "steps": "Online form. Cross-device identity. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "techtarget",
+   "name": "TechTarget",
+   "priority": 4,
+   "searchURL": "https://techtarget.com/",
+   "optOutURL": "https://techtarget.com",
+   "steps": "Online form. B2B tech purchase intent data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "telefi",
+   "name": "Telefi",
+   "priority": 4,
+   "searchURL": "https://telefi.app/",
+   "optOutURL": "https://telefi.app",
+   "steps": "Online form. Phone data app. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "telephonelists",
+   "name": "TelephoneLists",
+   "priority": 4,
+   "searchURL": "https://telephonelists.biz/",
+   "optOutURL": "https://telephonelists.biz",
+   "steps": "Online form. Phone number marketing lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "terminus",
+   "name": "Terminus",
+   "priority": 4,
+   "searchURL": "https://terminus.com/",
+   "optOutURL": "https://terminus.com",
+   "steps": "Online form. ABM platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "thebridgecorp",
+   "name": "TheBridgeCorp",
+   "priority": 4,
+   "searchURL": "https://thebridgecorp.com/",
+   "optOutURL": "https://thebridgecorp.com",
+   "steps": "Online form. Direct marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "theworknumber-equifax",
+   "name": "TheWorkNumber (Equifax)",
+   "priority": 4,
+   "searchURL": "https://theworknumber.com/",
+   "optOutURL": "https://theworknumber.com",
+   "steps": "Online form. HIGH PRIORITY. Employment/income verification database (670M+ records). Also call 1-866-295-6801. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "throtle",
+   "name": "Throtle",
+   "priority": 4,
+   "searchURL": "https://throtle.io/",
+   "optOutURL": "https://throtle.io",
+   "steps": "Online form. Identity resolution/marketing. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "tl1-mkt",
+   "name": "TL1 MKT",
+   "priority": 4,
+   "searchURL": "https://tl1mkt.com/",
+   "optOutURL": "https://tl1mkt.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "towerdata",
+   "name": "TowerData",
+   "priority": 4,
+   "searchURL": "https://towerdata.com/",
+   "optOutURL": "https://towerdata.com",
+   "steps": "Online form. Email intelligence data. Processes immediately. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "traackr",
+   "name": "Traackr",
+   "priority": 4,
+   "searchURL": "https://traackr.com/",
+   "optOutURL": "https://traackr.com",
+   "steps": "Online form. Influencer marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "trestleiq",
+   "name": "TrestleIQ",
+   "priority": 4,
+   "searchURL": "https://trestleiq.com/",
+   "optOutURL": "https://trestleiq.com",
+   "steps": "Online form. Phone/identity intelligence. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "truedata",
+   "name": "TrueData",
+   "priority": 4,
+   "searchURL": "https://truedata.co/",
+   "optOutURL": "https://truedata.co",
+   "steps": "Online form. Mobile audience data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "tymax-media",
+   "name": "Tymax Media",
+   "priority": 4,
+   "searchURL": "https://tymaxmedia.com/",
+   "optOutURL": "https://tymaxmedia.com",
+   "steps": "Online form. Advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "unity",
+   "name": "Unity",
+   "priority": 4,
+   "searchURL": "https://unity.com/",
+   "optOutURL": "https://unity.com",
+   "steps": "Online form. Gaming/app advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "us-data-corporation",
+   "name": "US Data Corporation",
+   "priority": 4,
+   "searchURL": "https://usdatacorporation.com/",
+   "optOutURL": "https://usdatacorporation.com",
+   "steps": "Online form. Consumer/business data lists. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "us-marketing-group",
+   "name": "US Marketing Group",
+   "priority": 4,
+   "searchURL": "https://usmarketinggrp.com/",
+   "optOutURL": "https://usmarketinggrp.com",
+   "steps": "Online form. Marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "valassis-vericast",
+   "name": "Valassis (Vericast)",
+   "priority": 4,
+   "searchURL": "https://valassis.com/",
+   "optOutURL": "https://valassis.com",
+   "steps": "Online form. Direct mail/coupon data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "veeva",
+   "name": "Veeva",
+   "priority": 4,
+   "searchURL": "https://veeva.com/",
+   "optOutURL": "https://veeva.com",
+   "steps": "Online form. Healthcare/pharma data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "venntel",
+   "name": "Venntel",
+   "priority": 4,
+   "searchURL": "https://venntel.com/",
+   "optOutURL": "https://venntel.com",
+   "steps": "Online form. Government location data. Processes immediately. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "versium",
+   "name": "Versium",
+   "priority": 4,
+   "searchURL": "https://versium.com/",
+   "optOutURL": "https://versium.com",
+   "steps": "Online form. Identity resolution/marketing data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "viant",
+   "name": "Viant",
+   "priority": 4,
+   "searchURL": null,
+   "optOutURL": "https://ccpa.viantinc.com/",
+   "steps": "An advertising platform. Submit the consumer rights form, or email a deletion request.",
+   "email": "privacy@viantinc.com"
+  },
+  {
+   "id": "vrtcal",
+   "name": "Vrtcal",
+   "priority": 4,
+   "searchURL": "https://vrtcal.com/",
+   "optOutURL": "https://vrtcal.com",
+   "steps": "Online form. Mobile advertising. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "warmly",
+   "name": "Warmly",
+   "priority": 4,
+   "searchURL": "https://warmly.ai/",
+   "optOutURL": "https://warmly.ai",
+   "steps": "Online form. Website visitor identification. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "wealth-x",
+   "name": "Wealth-X",
+   "priority": 4,
+   "searchURL": "https://wealthx.com/",
+   "optOutURL": "https://wealthx.com",
+   "steps": "Online form + Email confirm. High-net-worth individual data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "weinform-truthrecord",
+   "name": "WeInform/TruthRecord",
+   "priority": 4,
+   "searchURL": "https://weinform.org/",
+   "optOutURL": "https://weinform.org",
+   "steps": "Online form. People search/records. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "wiland",
+   "name": "Wiland",
+   "priority": 4,
+   "searchURL": "https://wiland.com/",
+   "optOutURL": "https://wiland.com",
+   "steps": "Online form. Consumer spending data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "windfall-data",
+   "name": "Windfall Data",
+   "priority": 4,
+   "searchURL": "https://windfalldata.com/",
+   "optOutURL": "https://windfalldata.com",
+   "steps": "Online form. Wealth intelligence data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "wiza",
+   "name": "Wiza",
+   "priority": 4,
+   "searchURL": "https://wiza.co/",
+   "optOutURL": "https://wiza.co",
+   "steps": "Online form + Email confirm. LinkedIn-based sales prospecting. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "wodwo",
+   "name": "Wodwo",
+   "priority": 4,
+   "searchURL": "https://wodwo.com/",
+   "optOutURL": "https://wodwo.com",
+   "steps": "Online form. Advertising data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "zeta-global",
+   "name": "Zeta Global",
+   "priority": 4,
+   "searchURL": "https://zetaglobal.com/",
+   "optOutURL": "https://zetaglobal.com",
+   "steps": "Online form + Email confirm. Marketing data platform. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  },
+  {
+   "id": "zs",
+   "name": "ZS",
+   "priority": 4,
+   "searchURL": "https://zs.com/",
+   "optOutURL": "https://zs.com",
+   "steps": "Online form. Healthcare/pharma consulting data. Usual route: open the site, scroll to the footer and tap “Do Not Sell or Share My Personal Information” (or “Privacy Choices” / “Opt Out”), then fill in the form and confirm by email."
+  }
+ ]
+}

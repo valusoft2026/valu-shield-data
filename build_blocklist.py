@@ -50,6 +50,17 @@ def get(params, key):
     raise RuntimeError("FTC API kept failing")
 
 
+def phone_of(r):
+    """The API has returned both JSON:API rows (attributes, kebab-case) and flat camelCase rows."""
+    if not isinstance(r, dict):
+        return None
+    src = r.get("attributes") if isinstance(r.get("attributes"), dict) else r
+    for k in ("company-phone-number", "companyPhoneNumber", "company_phone_number"):
+        if src.get(k):
+            return src[k]
+    return None
+
+
 def fetch_day(day, key):
     counts, offset, total = Counter(), 0, None
     while True:
@@ -57,14 +68,16 @@ def fetch_day(day, key):
                     "sort_order": "ASC"}, key)
         rows = data.get("data") or []
         meta = data.get("meta") or {}
-        total = meta.get("records-total", meta.get("record-total", total))
+        t = meta.get("records-total", meta.get("record-total"))
+        if isinstance(t, (int, str)) and str(t).isdigit():
+            total = int(t)
         for r in rows:
-            n = e164((r.get("attributes") or {}).get("company-phone-number"))
+            n = e164(phone_of(r))
             if n:
                 counts[n] += 1
         offset += len(rows)
-        print(f"{day}: {offset}/{total}", flush=True)
-        if len(rows) < PAGE or (total is not None and offset >= int(total)):
+        print(f"{day}: {offset}/{total if total is not None else '?'} ({len(counts)} numbers)", flush=True)
+        if len(rows) < PAGE or (total is not None and offset >= total):
             return counts
         time.sleep(PACE)
 

@@ -2,6 +2,102 @@
  "updated": "2026-11-12",
  "brokers": [
   {
+   "id": "bing-concern",
+   "name": "Bing – Report a Concern",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://www.microsoft.com/en-us/concern/bing",
+   "steps": "Choose Bing Search → personal identifying information and contact details, then paste the result links that show your number. This also covers DuckDuckGo, Yahoo and Ecosia, which use Bing's results.",
+   "external": true
+  },
+  {
+   "id": "eyecon",
+   "name": "Eyecon (caller-ID app)",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://www.eyecon-app.com/",
+   "steps": "Eyecon has no form for people who don't use the app; send an email deletion request with your number including +1.",
+   "email": "support@eyecon-app.com"
+  },
+  {
+   "id": "facebook-phone-lookup",
+   "name": "Facebook – stop lookups by phone number",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://www.facebook.com/settings?tab=privacy",
+   "steps": "Under How people find and contact you, set “Who can look you up using the phone number you provided?” to Only me. Do the same in Instagram's and WhatsApp's privacy settings.",
+   "external": true
+  },
+  {
+   "id": "google-removal-form",
+   "name": "Google – Personal Info Removal Form",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://support.google.com/websearch/troubleshooter/3111061",
+   "steps": "For one specific search result that shows your phone number, address or email. Paste the page link and the search you used. Europeans can also make a “right to be forgotten” request here.",
+   "external": true
+  },
+  {
+   "id": "google-results-about-you",
+   "name": "Google – Results About You",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://myactivity.google.com/results-about-you",
+   "steps": "Sign in with your Google account, tap Get started, and add your phone number, name and address. Google then alerts you when a search result shows them and lets you request removal with one tap. It only hides results in Google Search, so keep removing the sites themselves too. Opens in Safari or the Google app because Google sign-in won't work inside other apps.",
+   "external": true
+  },
+  {
+   "id": "hiya",
+   "name": "Hiya (caller ID for AT&T and Samsung)",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://apphelp.hiya.com/en/articles/38-your-data-and-privacy",
+   "steps": "Hiya powers caller ID on Samsung phones and AT&T's ActiveArmor. Its help page links the forms to remove your number's caller-ID label or make a full deletion request."
+  },
+  {
+   "id": "donotcall",
+   "name": "National Do Not Call Registry",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://www.donotcall.gov/",
+   "steps": "Free. Stops most legal telemarketers within about 31 days. Scammers ignore it, but registering makes every legal sales call a violation you can report.",
+   "external": true
+  },
+  {
+   "id": "optoutprescreen",
+   "name": "OptOutPrescreen (credit & insurance offers)",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://www.optoutprescreen.com/",
+   "steps": "The official credit-bureau site that stops pre-approved credit card and insurance offers, which feed marketing lists. Free; choose 5 years online, or mail the form for permanent opt-out.",
+   "external": true
+  },
+  {
+   "id": "spydialer",
+   "name": "Spy Dialer",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://www.spydialer.com/consumers/",
+   "steps": "On the Remove My Info page tap START, then add your name, phone number, address and email and tap Opt-Out My Info. Spy Dialer accepts opt-outs from all states. The last step is final and can't be undone."
+  },
+  {
+   "id": "syncme",
+   "name": "Sync.ME (caller-ID app)",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://sync.me/unsubscribe/",
+   "steps": "On the Remove My Info page, enter your email and phone number, solve the reCAPTCHA and submit. Sync.ME says removal takes about 24 hours. Your number can come back when other people upload their contacts, so re-check now and then.",
+   "email": "support@sync.me"
+  },
+  {
+   "id": "truecaller",
+   "name": "Truecaller (caller-ID app)",
+   "priority": 0,
+   "searchURL": null,
+   "optOutURL": "https://www.truecaller.com/unlisting",
+   "steps": "Caller-ID apps show your name to everyone you call. Enter your number with +1, pick a reason, solve the CAPTCHA and tap Unlist; it takes about 24 hours. If you use the Truecaller app, deactivate your account in it first (Settings → Privacy Center). Truecaller won't unlist a number that's been marked as spam."
+  },
+  {
    "id": "beenverified",
    "name": "BeenVerified",
    "priority": 1,
@@ -1376,14 +1472,6 @@
    "needsEmail": true
   },
   {
-   "id": "spy-dialer",
-   "name": "Spy Dialer",
-   "priority": 3,
-   "searchURL": "https://spydialer.com/",
-   "optOutURL": "https://www.spydialer.com/optout.aspx",
-   "steps": "Online form. Reverse phone lookup"
-  },
-  {
    "id": "spytox",
    "name": "Spytox",
    "priority": 3,
@@ -1407,14 +1495,6 @@
    "searchURL": "https://superpages.com/",
    "optOutURL": "https://tinyurl.com/dexknowscom",
    "steps": "Online form. Owned by Thryv. Same removal as DexKnows"
-  },
-  {
-   "id": "sync-me",
-   "name": "Sync Me",
-   "priority": 3,
-   "searchURL": "https://sync.me/",
-   "optOutURL": "https://sync.me/optout/",
-   "steps": "Online form. Caller ID app. Submit phone number to remove"
   },
   {
    "id": "telephone-directories",

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Builds blocklist.txt for Valu-Shield from the FTC Do Not Call complaint API.
+"""Builds blocklist.txt for Valu-Shield from the FTC Do Not Call complaint API
+plus FCC unwanted-call complaints (opendata.fcc.gov).
 
 Each run fetches the complaints for the given day(s), stores per-day counts in
 daily/YYYY-MM-DD.csv, then rebuilds blocklist.txt from the last WINDOW days:
@@ -82,6 +83,38 @@ def fetch_day(day, key):
         time.sleep(PACE)
 
 
+FCC_API = "https://opendata.fcc.gov/resource/3xyp-aqkj.json"
+FCC_FILE = ROOT / "fcc.csv"
+
+
+def fetch_fcc():
+    """FCC unwanted-call complaints (caller ID numbers), grouped server-side: one request.
+    Optional extra source — if it fails, the FTC list still builds."""
+    since = (dt.date.today() - dt.timedelta(days=WINDOW)).isoformat()
+    params = {
+        "$select": "caller_id_number, count(*) AS n",
+        "$where": f"caller_id_number IS NOT NULL AND ticket_created >= '{since}T00:00:00'",
+        "$group": "caller_id_number",
+        "$limit": "200000",
+    }
+    url = FCC_API + "?" + urllib.parse.urlencode(params)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "valu-shield-data"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            rows = json.load(r)
+    except Exception as e:
+        print(f"FCC data skipped: {e}", flush=True)
+        return
+    counts = Counter()
+    for row in rows:
+        n = e164(row.get("caller_id_number"))
+        if n:
+            counts[n] += int(row.get("n") or 1)
+    with FCC_FILE.open("w", newline="") as fh:
+        csv.writer(fh).writerows(sorted(counts.items()))
+    print(f"FCC: {len(counts)} numbers", flush=True)
+
+
 def rebuild():
     cutoff = dt.date.today() - dt.timedelta(days=WINDOW)
     total = Counter()
@@ -90,6 +123,10 @@ def rebuild():
             f.unlink()          # keep the repo small
             continue
         with f.open() as fh:
+            for n, c in csv.reader(fh):
+                total[int(n)] += int(c)
+    if FCC_FILE.exists():
+        with FCC_FILE.open() as fh:
             for n, c in csv.reader(fh):
                 total[int(n)] += int(c)
     nums = sorted(n for n, c in total.items() if c >= MIN_REPORTS)
@@ -124,6 +161,7 @@ def main():
     days_back = int(sys.argv[1]) if len(sys.argv) > 1 else 3
     deadline = time.time() + float(os.environ.get("MAX_MINUTES", "330")) * 60
     DAILY.mkdir(exist_ok=True)
+    fetch_fcc()
     today = dt.date.today()
     # Newest first: the list is useful after the first day, and older days fill in over time.
     for i in range(1, days_back + 1):

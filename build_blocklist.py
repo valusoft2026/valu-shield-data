@@ -8,7 +8,7 @@ daily/YYYY-MM-DD.csv, then rebuilds blocklist.txt from the last WINDOW days:
 Usage:  FTC_API_KEY=xxxx python3 build_blocklist.py [days_back=3]
 API key (free): https://api.data.gov/signup/
 """
-import csv, datetime as dt, json, os, sys, time, urllib.parse, urllib.request
+import csv, datetime as dt, json, os, subprocess, sys, time, urllib.parse, urllib.request
 from collections import Counter
 from pathlib import Path
 
@@ -102,14 +102,34 @@ def rebuild():
     print(f"blocklist.txt: {len(nums)} numbers")
 
 
+def save_progress(day):
+    """In GitHub Actions, commit after every day so a timeout never loses finished work."""
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    cmds = [["git", "add", "-A"],
+            ["git", "-c", "user.name=valu-shield-bot", "-c", "user.email=actions@users.noreply.github.com",
+             "commit", "-qm", f"Blocklist through {day}"],
+            ["git", "pull", "--rebase", "-q"],
+            ["git", "push", "-q"]]
+    for c in cmds:
+        if subprocess.run(c, cwd=ROOT).returncode != 0 and c[1] != "commit":
+            print("git step failed:", " ".join(c), flush=True)
+            return
+
+
 def main():
     key = os.environ.get("FTC_API_KEY")
     if not key:
         sys.exit("Set FTC_API_KEY (free at https://api.data.gov/signup/)")
     days_back = int(sys.argv[1]) if len(sys.argv) > 1 else 3
+    deadline = time.time() + float(os.environ.get("MAX_MINUTES", "330")) * 60
     DAILY.mkdir(exist_ok=True)
     today = dt.date.today()
-    for i in range(days_back, 0, -1):
+    # Newest first: the list is useful after the first day, and older days fill in over time.
+    for i in range(1, days_back + 1):
+        if time.time() > deadline:
+            print("Time limit reached; the next run continues from here.", flush=True)
+            break
         day = (today - dt.timedelta(days=i)).isoformat()
         out = DAILY / f"{day}.csv"
         if out.exists() and i > 3:
@@ -117,6 +137,8 @@ def main():
         counts = fetch_day(day, key)
         with out.open("w", newline="") as fh:
             csv.writer(fh).writerows(sorted(counts.items()))
+        rebuild()
+        save_progress(day)
     rebuild()
 
 

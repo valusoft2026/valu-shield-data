@@ -1107,8 +1107,7 @@
    "priority": 3,
    "searchURL": "https://old-friends.co/",
    "optOutURL": "https://old-friends.co",
-   "steps": "On-site removal. Hover over your name for removal option. Email: support@old-friends.co",
-   "email": "support@old-friends.co"
+   "steps": "On-site removal. Hover over your name for removal option. Email: support@old-friends.co"
   },
   {
    "id": "old-phone-book",
@@ -1360,8 +1359,7 @@
    "priority": 3,
    "searchURL": "https://pch.com/",
    "optOutURL": "https://pch.com",
-   "steps": "Email. Email privacychoices@pchmail.com",
-   "email": "privacychoices@pchmail.com"
+   "steps": "Email. Email privacychoices@pchmail.com"
   },
   {
    "id": "quick-people-trace",
@@ -1561,8 +1559,7 @@
    "priority": 3,
    "searchURL": "https://ufind.name/",
    "optOutURL": "https://ufind.name",
-   "steps": "Email. Email support@ufind.name",
-   "email": "support@ufind.name"
+   "steps": "Email. Email support@ufind.name"
   },
   {
    "id": "unitedstatesphonebook",
@@ -1718,8 +1715,7 @@
    "priority": 3,
    "searchURL": "https://zabasearch.com/",
    "optOutURL": "https://zabasearch.com",
-   "steps": "Fax. Fax to 425-974-6194. Email: response@zabasearch.com",
-   "email": "response@zabasearch.com"
+   "steps": "Fax. Fax to 425-974-6194. Email: response@zabasearch.com"
   },
   {
    "id": "zoominfo",
